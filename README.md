@@ -1,7 +1,5 @@
 # Kuratierte Übersicht: Repos, Agent-Tools, Prompts & Cloud-Dienste
 
-Diese Übersicht basiert auf der vollständigen Analyse aller Screenshots im Hauptordner `/Users/timrennings/Downloads/Interessante repos` sowie dem Unterordner `github maybe doppelt`. 
-
 Die Strukturierung ist strikt nach Relevanz aufgebaut: **`AOS` (Agent OS, Multi-Agent Swarm, Coding-Harness, Skills & Design)** steht oben, und **`saasengine` (Cloud-Dienste, Flotten-Infrastruktur & Self-Hosted Services)** befindet sich am Ende der Datei.
 
 ---
