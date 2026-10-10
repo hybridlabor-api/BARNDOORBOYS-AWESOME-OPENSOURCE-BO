@@ -5,21 +5,21 @@ Die Strukturierung ist strikt nach Relevanz aufgebaut: **`AOS` (Agent OS, Multi-
 ---
 
 ## Inhaltsverzeichnis
-1. [Kategorie 1: Direkt hochrelevant für `/bdb-dev AOS` (Agent OS, Harness, Skills, Supervision, QA)](#kategorie-1-direkt-hochrelevant-für-bdb-dev-aos)
+1. [Kategorie 1: ](#kategorie-1-direkt-hochrelevant-für-bdb-dev-aos)
 2. [Kategorie 2: Frontend, Design-Skills & UI-Komponenten (Godmode UI/UX & WebGPU)](#kategorie-2-frontend-design-skills--ui-komponenten)
 3. [Kategorie 3: Video & Creative Media Tech (Godmode Media / EventTech)](#kategorie-3-video--creative-media-tech)
 4. [Kategorie 4: Gründer- & Strategie-Skills für Claude Code](#kategorie-4-gründer--strategie-skills-für-claude-code)
 5. [Kategorie 5: Architektur-Blueprints, Agent-Muster & Intentional Prompts](#kategorie-5-architektur-blueprints-agent-muster--intentional-prompts)
 6. [Kategorie 6: Interne Workspace-Snapshots & Event-Notizen](#kategorie-6-interne-workspace-snapshots--event-notizen)
-7. [Kategorie 7: Relevant für `saasengine` (Cloud-Dienste, Flotte, Hosting)](#kategorie-7-relevant-für-saasengine)
-8. [Kategorie 8: Neue Sammlung — 7. Okt 2026 (`github repos neue sammlung 7 okt/`)](#kategorie-8-neue-sammlung--7-okt-2026-github-repos-neue-sammlung-7-okt)
-9. [Kategorie 9: Chrome-Tab-Sammlung — 10. Okt 2026](#kategorie-9-chrome-tab-sammlung--10-okt-2026)
-10. [Kategorie 10: Neue Sammlung — Doom Scrolling (`NEW DOOM SCROLLING/`) — 10. Okt 2026](#kategorie-10-neue-sammlung--doom-scrolling-new-doom-scrolling--10-okt-2026)
+7. [Kategorie 7: Cloud-Dienste, Flotte, Hosting)](#kategorie-7-relevant-für-saasengine)
+8. [Kategorie 8:NEW 0 (#kategorie-8-neue-sammlung--7-okt-2026-github-repos-neue-sammlung-7-okt)
+9. [Kategorie 9:NEW 1
+10. [Kategorie 10: NEW 2
 11. [Kategorie 11: Frisch "Starred" auf GitHub (Oktober 2026)](#kategorie-11-frisch-starred-auf-github-oktober-2026)
 
 ---
 
-## Kategorie 1: Direkt hochrelevant für `/bdb-dev AOS`
+## Kategorie 1: NUMBER I REPOS
 *Fokus: Coding-Agent-Harnessing, autonome Supervision, Token-Reduktion, MCP-Tools, Skill-Generierung, CI/CD-QA.*
 
 | Name | GitHub / URL | Funktion & Relevanz für AOS | Screenshot-Quelle |
@@ -160,14 +160,6 @@ agent-team/
     └── MEMORY.md          # Cross-Session Recall
 ```
 
----
-
-## Kategorie 6: Interne Workspace-Snapshots & Event-Notizen
-*Eigene Bildschirmaufnahmen und persönliche Notizen:*
-* **`IMG_6893.PNG`**: Pull Request im internen Repo `hybridlabor-api/aos` (`fix(installer): write an agy-valid hook...`).
-* **`IMG_6894.PNG`, `IMG_6897.PNG`, `IMG_6898.PNG`, `IMG_6900.PNG`, `IMG_6901.PNG`**: Tim's AO-Master-Session (Agent Orchestrator, ListAgents, Commit `2d64e8d`, Mode-Classifier-Diskussion, Subagent-Auftragsvergabe als Start-Prompt statt Peer-Message).
-* **`IMG_6913.jpg`**: Privater Chat-Ausschnitt zu Bogotá / Event-Empfehlungen.
-* **`IMG_6993.jpg`**: Event-Ticket / Gästeliste (`wyldhearts.guestlist.pro` – Kalif Storch Erfurt).
 
 ---
 
