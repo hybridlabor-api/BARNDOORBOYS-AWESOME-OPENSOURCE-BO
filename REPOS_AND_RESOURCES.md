@@ -23,11 +23,12 @@
 
 ## 1. AI Coding Harnesses, Workspaces & Agent Supervisions (AOS Core)
 
-*Anzahl kuratierter Tools: 73*
+*Anzahl kuratierter Tools: 79*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
 | **`96218f76…JPG` / `f4947ff7…JPG`** | — | Chitubox Pro &#124; 🖨️ 3D-Druck Slicer Extraktions-Log — kein Repo. |
+| **Agent HUD Open** | [https://github.com/jazzenchen/agent-hud-open](https://github.com/jazzenchen/agent-hud-open) | Swift macOS Notch-HUD für Coding-Agenten: Zeigt Token-Verbrauch, API-Kosten und Session-Status direkt in der MacBook-Notch an. |
 | **Agentic Inbox** | [https://github.com/cloudflare/agentic-inbox](https://github.com/cloudflare/agentic-inbox) | Serverless AI Email Client auf Cloudflare: Vollständiger Mail-Client, der autonom E-Mails liest, kategorisiert und beantwortet. Läuft serverless auf Cloudflare Workers/Agents. |
 | **AGENTS.md Specification** | [https://github.com/agentsmd/agents.md](https://github.com/agentsmd/agents.md) | Offener Standard für Coding-Agent-Instruktionen: Standardisiertes Format für Copilot, Gemini CLI, Cursor, Claude Code. Dient als Referenz-Linter für `npm run validate` im AOS-Ökosystem. |
 | **Alexaiupdates 9-Skill Suite** | — | @alexaiupdates &#124; Prompt- & Workflow-Skills für Claude: `/prompt-master` (Clean Spec), `/grill-me` (Fragen stellen bis Klarheit herrscht), `/how-to`, `/optimizer` (Opus-Polishing), `/fable`, `/personal-voice`, `/anti-ai` (KI-Phrasen entfernen), `/write-a-skill`, `/handoff`. &#124; `IMG_7162` |
@@ -36,6 +37,7 @@
 | **AutoHarness** | [https://github.com/tigerless-labs/autoharness](https://github.com/tigerless-labs/autoharness) | Self-Learning Skill Layer für Claude Code: Lernt automatisch neue Fähigkeiten direkt aus realen Arbeitssessions, führt Duplikate zusammen (`fold/reflector`) und bereinigt ungenutzte Skills selbstständig. |
 | **ax (Google)** | [https://github.com/google/ax](https://github.com/google/ax) | Google's Open Agentic Orchestration Runtime: Offenes Framework von Google zur Multi-Agenten-Orchestrierung. |
 | **Blackbit.sh** | [https://blackbit.sh](https://blackbit.sh) | Multi-Model Orchestrierung: Optimiertes Setup, bei dem jedes Modell seine spezialisierte Rolle erhält (z.B. Opus plant jede Aufgabe und leitet an Ausführer weiter). |
+| **Boris Cherny Workflow Heuristics** | — | Produktions-Leitplanken des Claude-Code-Schöpfers: Plan Mode Default (ab 3 Schritten Pflicht), Subagents Liberally (Hauptkontext sauber halten), Self-Improvement Loop (tasks/lessons.md nach User-Korrekturen), Verification Before Done, Demand Elegance, Autonomous Bug Fixing. |
 | **Claude Managed Agents** | [https://x.com/ClaudeDevs](https://x.com/ClaudeDevs) | Dynamic Workflows Public Beta: Anthropics offizielle Ankündigung für dynamische Agenten-Workflows und verwaltete Multi-Agenten-Ausführung. |
 | **Claude-Code-Mods** | [https://github.com/hamzafer/claude-code-mods](https://github.com/hamzafer/claude-code-mods) | Curated Plugins & Mods for Claude Code: Strukturierte Mod-Sammlung zur Erweiterung von Claude Code Fähigkeiten. |
 | **Composio** | [https://github.com/ComposioHQ/composio](https://github.com/ComposioHQ/composio) | 100+ Enterprise Tool-Integrations für Agenten: Standardisierte Actions und MCP-Schnittstellen für Slack, Notion, GitHub, Salesforce, Gmail u.v.m. |
@@ -54,6 +56,7 @@
 | **GitBot** | [https://github.com/gitbot-hq/GitBot](https://github.com/gitbot-hq/GitBot) | "Give your coding agents a home": Lokaler Server (Port 3000), der Claude Code/Codex/OpenCode aus dem Browser fernsteuert — wiederverwendbare Bots, persistente Threads, per-Bot Permissions. npm `@gitbot-hq/gitbot`. Vergleichbar mit Coucou/GitHub-Remote-Steuerung. |
 | **github.com/nettanvirdev/inertia** | [https://github.com/nettanvirdev/inertia](https://github.com/nettanvirdev/inertia) | 🔁 War in Kat. 9.2 vermerkt ("README prüfen") — durch Screenshot & GitHub-Star nun vollständig beschrieben. |
 | **GithubSignals** | [https://github.com/giovancarl444/githubsignals](https://github.com/giovancarl444/githubsignals) | Modulares Release- und Aktivitäts-Monitoring für Open-Source-Repositories. |
+| **google-research/harness2** | [https://github.com/google-research/harness2](https://github.com/google-research/harness2) | Modulare 8-Komponenten Agent-Harness-Architektur von Google Research: Saubere Entkopplung von Modell-Inferenz, Tool-Execution, Memory und Verifikations-Loops. |
 | **Hairline** | [https://github.com/lucasmarkes/hairline](https://github.com/lucasmarkes/hairline) | Feine isometrische Linien-Figuren: Reagiert interaktiv auf Mausbewegungen. Für React und reines DOM. Inklusive Claude-Skill `hairline-create`. |
 | **hark-pool** | [https://github.com/0xgetz/hark-pool](https://github.com/0xgetz/hark-pool) | Headless Account Pooling & OpenAI Proxy: Erstellt Hark-Accounts automatisiert und bündelt den gesamten Pool als einzelnen OpenAI-kompatiblen Provider für 9Router. Zero Dependencies, Round-Robin Session-Adapter. |
 | **Herdr** | [https://github.com/herdrdev/herdr](https://github.com/herdrdev/herdr) | "The runtime your coding agents live on": Isolierte Ausführungsumgebung und lokales Sandboxing für Coding-Agenten. ~33k Stars, Apache-2.0. |
@@ -67,8 +70,10 @@
 | **Jev Engineering Tree (@polydao)** | [https://x.com/polydao](https://x.com/polydao) | Prompt-Methodik (kein Repo): Claude-Code-Agent-Tree mit Fable-Advisor (liest alles, schreibt nie), Jev-Fork-Layer (deterministische which-file/which-tool/retry-Entscheidungen < 0,5s statt Opus-Aufrufen), 3 Subagenten (medium effort), Review+Verify vor Ship. Passgenau zu unserer Harness-/Token-Einspar-Diskussion. |
 | **Kestra** | [https://github.com/kestra-io/kestra](https://github.com/kestra-io/kestra) | Deklarative Event-Driven Orchestrierung: Alternative zu Airflow für daten- und codegetriebene Workflows via YAML. 26k Stars. |
 | **Khazix Skills** | [https://github.com/KKKKhazix/khazix-skills](https://github.com/KKKKhazix/khazix-skills) | Multi-Harness Skill Repository: 40+ Skills für Claude Code, Codex, Cursor & Co., inklusive `neat-freak` (`/neat` Codebase-Hygiene), `hy-analysis` (Architektur-Audit) und `storage-analyzer`. |
+| **Laminar (lmnr)** | [https://github.com/lmnr-ai/lmnr](https://github.com/lmnr-ai/lmnr) | Open-Source LLM & Agent Observability: Tracing, Prompt-Evaluation und Dataset-Generierung (OpenTelemetry native, Rust/TypeScript). |
 | **LangChain** | [https://github.com/langchain-ai/langchain](https://github.com/langchain-ai/langchain) | Connective Tissue Framework: Standardisierte Ketten, Tools, Retriever und Gedächtniskomponenten für LLM-Anwendungen. |
 | **Lawve · awesome-legal-skills** | [https://github.com/lawve-ai/awesome-legal-skills](https://github.com/lawve-ai/awesome-legal-skills) | 70+ kuratierte Agent-Skills für Legal-Work (NDA-Review, GDPR, Due-Diligence, Commercial Law), beigesteuert von Praktikern; portable Standards statt proprietärer Formate. ~700 Stars. |
+| **LazySkills** | [https://github.com/alvinunreal/lazyskills](https://github.com/alvinunreal/lazyskills) | Blazing-fast TUI für Agent-Skills: Prüft installierte Skills, Agenten-Sichtbarkeiten und Konfigurationsfehler in einer übersichtlichen Terminal-Oberfläche. |
 | **Liquid Glass / Liquid Logo** | — | Demo-Referenzen &#124; Shader-gestützte interaktive Flüssigglas- und Logo-Verzerrungseffekte für moderne Landing Pages. &#124; `IMG_7186`, `IMG_7187` |
 | **Listmonk** | [https://github.com/knadh/listmonk](https://github.com/knadh/listmonk) | Hochperformanter Self-Hosted Newsletter & Transaktions-Mailer: Schneller Go-basierter E-Mail-Dienst (Mailchimp-Alternative) für Massen-Mails und System-Nachrichten bei minimalem Ressourcenverbrauch. |
 | **Lucide Icons** | [https://github.com/lucide-icons/lucide](https://github.com/lucide-icons/lucide) | Community-Standard Icon-Bibliothek: Über 1.000 konsistente Icons mit Figma-Plugin und nativer Integration für alle JS-Frameworks. |
@@ -86,6 +91,7 @@
 | **open-agent-connector** | [https://github.com/Anil-matcha/open-agent-connector](https://github.com/Anil-matcha/open-agent-connector) | Open-Source Alternative zu Composio & Nango: Self-hosted Integrationen für GitHub, Slack, Hacker News und HTTP-Actions via MCP oder REST. |
 | **OpenHarness** | [https://github.com/autonomous-ai/openharness](https://github.com/autonomous-ai/openharness) | The Ultimate Harness for Coding Agents: Universelles Open-Source Harness für autonome Coding-Agenten und Multi-Tool Workflows. |
 | **OpenSEO** | [https://openseo.so](https://openseo.so) | Open-Source SEO Alternative zu Semrush & Ahrefs: Keyword-Research, Backlink-Audits und offizieller Google Search Console (GSC) MCP Server. |
+| **Paperthin** | [https://github.com/LilMGenius/paperthin](https://github.com/LilMGenius/paperthin) | Cross-Harness Skill-Verteilung (npx skills add LilMGenius/paperthin): Verankert Senior-Engineering-Reflexe und Heuristiken direkt in Claude, Codex, OpenCode und Antigravity. |
 | **playbooks** | [https://github.com/playbooks-ai/playbooks](https://github.com/playbooks-ai/playbooks) | Semantisches Programmiersystem für KI-Agenten: Standardisierte, ausführbare Playbooks zur Steuerung komplexer Agenten-Zyklen. |
 | **Promix (X-Post)** | [https://x.com/Promixyz/status/2102424036416348494](https://x.com/Promixyz/status/2102424036416348494) | Post mit einem Kurzlink; Inhalt unklar, Repo nicht aufgelöst. |
 | **PRP-core (Wirasm)** | [https://github.com/Wirasm/prp](https://github.com/Wirasm/prp) | PRP-Methodik (Product Requirement Prompts = PRD + Codebase-Intelligence + Runbook): Plugin mit `/prp-core:prp-prd`, `/prp-core:prp-plan`, `/prp-core:prp-implement`, `/prp-loop` (headless plan→implement→PR→review Loop). 2.2k Stars. Direkt vergleichbar mit unserem Plan-Cycle. |
@@ -102,26 +108,32 @@
 | **yanliudesign (Yan Liu)** | [https://github.com/yanliudesign](https://github.com/yanliudesign) | GitHub-Profil eines Designers; relevante Repos noch nicht ermittelt. |
 
 ---
+
 ## 2. Multi-Agent Orchestration, Swarms & Protocols
 
-*Anzahl kuratierter Tools: 9*
+*Anzahl kuratierter Tools: 13*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
 | **A2A Protocol** | [https://github.com/a2aproject/A2A](https://github.com/a2aproject/A2A) | Agent-to-Agent Interoperability Protocol: Offener Standard zur Kommunikation zwischen unterschiedlichen, isolierten Multi-Agenten-Systemen (Discovery, Modalitäten-Aushandlung, Task-Kollaboration). Ergänzt MCP auf Agent-Ebene. |
+| **Agno (AgentOS)** | [https://github.com/agno-agi/agno](https://github.com/agno-agi/agno) | Multi-Modal Agent Platform & Runtime (ehem. Phidata): Eigenständiger Agenten-Stack mit Memory, Session-Store, RBAC und integriertem Web-Dashboard. |
 | **AI Employees** | [https://github.com/markfulton/ai-employees](https://github.com/markfulton/ai-employees) | 8 Open Source AI Employees & 60 Scheduled Routines: Deckt die Domänen GTM, SEO, WebDev, Social, Ads, Sales, Support und Chief of Staff ab. Füllt die bisher schwächste Domäne in AOS (`saas-ops` / Business-Workflows) mit schlüsselfertigen Routinen, abgesichert über das AOS GO-Gate. |
+| **Autonomous 4-Eyes Factory Pattern** | — | Deterministischer Build- & Review-Loop: Feature -> Spec-Writer (Opus) -> Builder (Opus) -> 4 parallele Reviews (Security [Opus], UX [Sonnet], UI-Design [Sonnet], Code [Sonnet]) -> max. 2 Runden -> All Pass -> Approve -> Merge to main. Bei Eskalation: Human-Approval. |
 | **ChatDev 2.0 (DevAll)** | [https://github.com/OpenBMB/ChatDev](https://github.com/OpenBMB/ChatDev) | Zero-Code Multi-Agent Platform: Nachfolger des klassischen ChatDev für universelle Multi-Agenten-Orchestrierung. Erlaubt die visuelle und deklarative Definition kollaborierender Agenten-Teams ohne Code. |
 | **CrewAI** | [https://github.com/crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | Rollenbasiertes Multi-Agenten-Framework: Orchestrierung spezialisierter Agenten (Researcher, Writer, Reviewer) über strukturierte Konfigurationen. |
+| **DeerFlow 2.0 (ByteDance)** | [https://github.com/bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Open-Source Multi-Agent Workflow-Plattform von ByteDance: Deep Research, Reasoning, Web-Browsing und Sandbox-Code-Ausführung. |
 | **OmniRoute** | [https://github.com/diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | Freies MIT-AI-Gateway: ein Endpoint, 359 Provider (150+ gratis), 1200+ Modelle; Quota-aware Auto-Fallback, RTK+Caveman-Kompression (15–95 % Token-Ersparnis), MCP/A2A. Läuft mit Claude Code, Codex, Cursor, OpenCode, Cline, Copilot. |
+| **OpenFlow** | [https://github.com/patrikbergd/openflow](https://github.com/patrikbergd/openflow) | Visueller Canvas-Builder für Multi-Agenten-Pipelines: Drag-and-Drop Pipeline-Verschaltung (Planner → Architect → Coder), angetrieben von opencode serve. |
 | **OpenRig** | [https://github.com/mvschwarz/openrig](https://github.com/mvschwarz/openrig) | Multi-Agent-Harness (Claude Code + Codex als ein System): Agent-Team in YAML (RigSpec) definiert, `rig up` bootet tmux-Sessions, Topologie-Graph-TUI, Sessions adoptieren, `rig send/broadcast/chatroom`, Snapshot/Restore. ~2k Stars, npm `@openrig/cli`. Konkurrenz/Synergie zu AO-Orchestrator. |
 | **Switch** | [https://github.com/flintai/switch](https://github.com/flintai/switch) | Human-Agent Collaboration Framework: Bindet KI-Agenten nativ in bestehende Team-Kanäle (Slack, Discord, Linear) ein, inklusive Console und Playground. |
 | **Taskuary** | [https://github.com/idbumble/taskuary](https://github.com/idbumble/taskuary) | Personal AI Assistant for your Job: E-Mails, Chats und Tickets werden in Aufgaben verwandelt; bestehende Agenten (Claude Code, Codex, Gemini) arbeiten sie im Hintergrund ab. |
 | **Warp Agentic** | [https://warp.dev](https://warp.dev) | Warp Terminal built for coding with multiple AI agents: Multi-Agent Kollaboration im Terminal für macOS, Linux und Windows. |
 
 ---
+
 ## 3. Computer-Use, OS Sandboxing & Remote Desktops
 
-*Anzahl kuratierter Tools: 12*
+*Anzahl kuratierter Tools: 15*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
@@ -129,37 +141,48 @@
 | **Bops** | [https://github.com/OrgoAI/bops](https://github.com/OrgoAI/bops) | Autonome Business-Ops Bot-Flotte: Mac-App, bei der jeder Bot einen eigenen Orgo-Cloud-Computer mit 4 Bildschirmen hat. Zugriff auf 1000+ Tools via Composio, Langzeitgedächtnis via Honcho und Computer Use via Codex. FSL-1.1. |
 | **Celesto** | [https://github.com/CelestoAI/celesto](https://github.com/CelestoAI/celesto) | Secure & Persistent Computer for AI Agents: Bietet isolierte, persistente Cloud/Desktop-Umgebungen (inkl. Windows Guide) für Agenten-Execution. Essentiell für sichere Code-Ausführung außerhalb der Host-Maschine. |
 | **CUA (Trycua)** | [https://github.com/trycua/cua](https://github.com/trycua/cua) | Scale Computer-Use 2.0: Open-Source OS-Treiber, Cross-OS Flotten (Mac/Windows/Linux) und Evaluierungs-Benchmarks für Computer-Use Agenten. Direkte Synergie mit den AOS Computer-Use MCPs. |
+| **ESP32 iPhone Agent** | [https://github.com/onehumanbeing/esp32-iphone-agent](https://github.com/onehumanbeing/esp32-iphone-agent) | $7 Hardware-Agent zur physischen iPhone-Steuerung: Agiert als Bluetooth-HID-Gerät für automatisierte Klicks und Tests ohne Jailbreak oder Dev-Account. |
 | **Google Artemis** | [https://github.com/google/artemis](https://github.com/google/artemis) | Android & Mobile UI Automation mit nativem MCP Server: Ermöglicht Coding-Agenten das direkte Steuern und Testen von physischen/virtuellen Mobilgeräten via ADB & Computer-Use (Observe-and-Act Loop). |
+| **LCU** | [https://github.com/AMONTLABS/LCU](https://github.com/AMONTLABS/LCU) | Decoupled Computer Use: Universelle Maus- und Tastatur-Steuerung für beliebige Coding-Agenten und Harnesses. |
 | **Microsoft Quicksand** | [https://github.com/microsoft/quicksand](https://github.com/microsoft/quicksand) | Lightweight Agent Sandboxing: Extrem schnelles Sandboxing von AI Agenten zur Verhinderung destruktiver Host-Eingriffe. Erlaubt isolierte Dateisystem- und Netzwerk-Zyklen. |
 | **Open SaaS** | [https://github.com/wasp-lang/open-saas](https://github.com/wasp-lang/open-saas) | Fullstack SaaS Starter Kit (Wasp / React / Node / Prisma): Bringt Stripe-Abrechnung, Rollen/Auth, Background Jobs und E-Mail-Templates out-of-the-box mit. Ausgezeichnete Vorlage für Saasengine-Endprodukte. |
 | **open-dots** | [https://github.com/Anil-matcha/open-dots](https://github.com/Anil-matcha/open-dots) | Self-Hosted AI Agent Workspace & Alternative zu OpenAI Operator / Claude Cowork: MIT-Lizenz, Chat-UI, Connectors, Human-in-the-Loop Freigaben und optionaler Computer-Use. |
 | **QuickDesk** | [https://github.com/barry-ran/QuickDesk](https://github.com/barry-ran/QuickDesk) | AI-Native Remote Desktop mit MCP Server: Open-Source Remote Desktop, der es beliebigen Agenten via standardisiertem MCP Server erlaubt, entfernte Rechner visuell wahrzunehmen und zu steuern (Maus, Tastatur, Screen). Direkte Brücke zu bdb-os-remote! |
+| **Sill** | [https://github.com/Saffsanity/sill](https://github.com/Saffsanity/sill) | Low-Latency Mac-to-iOS Display Mirroring (getsill.app): Streamt beliebige macOS-Fenster mit HEVC auf iPad/iPhone mit Touch- und Apple-Pencil-Rückkanal (P2P/Tailscale). |
 | **Squid** | [https://github.com/agent-squid/squid](https://github.com/agent-squid/squid) | Your Local Coding Agents, Unified: Vereint lokale Coding-Agenten unter einer gemeinsamen Oberfläche. |
 | **Windows-MCP** | [https://github.com/cursortouch/windows-mcp](https://github.com/cursortouch/windows-mcp) | Native Windows Computer-Use MCP Server: Bringt Cursor, Claude Code und Antigravity direkte Desktop-Interaktion unter Windows. |
 | **Windows-Use** | [https://github.com/sirendhead/Windows-Use](https://github.com/sirendhead/Windows-Use) | Open-Source Computer-Use for Windows: Speziell auf Windows abgestimmte UI-Automatisierung für Coding-Agenten via Vision & OS Accessibility APIs. |
 
 ---
+
 ## 4. Context, Memory, AST Code-Graphs & Knowledge
 
-*Anzahl kuratierter Tools: 10*
+*Anzahl kuratierter Tools: 16*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| **book-to-skill** | [https://github.com/epishkin/book-to-skill](https://github.com/epishkin/book-to-skill) | Dokumenten- und Buch-zu-Skill-Generator: Transformiert Fachbücher, PDFs und Source-Ordner in abrufbare Agent-Skills für Claude Code und Codex. |
+| **cao (Answer me with HTML)** | [https://github.com/epishkin/cao](https://github.com/epishkin/cao) | Token-sparender Visual Explainer Skill: Erzeugt interaktive HTML-Erklärungsseiten nach ASD-STE100 bei 1/7 des typischen Token-Aufwands. |
 | **Codebase Memory MCP** | [https://github.com/DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | AST Knowledge-Graph MCP Server: Parst Repositories via Tree-Sitter & LSP in eine lokale SQLite-Wissensdatenbank. Reduziert Kontext-Tokens bei Code-Recherche um bis zu 99% (z.B. von 412k auf 3.4k Tokens). Direkte Synergie mit Synapse & memB. |
+| **COG (Cognition + Obsidian + Git)** | [https://github.com/SafeSynt/cog](https://github.com/SafeSynt/cog) | Self-Evolving Second Brain (13k Stars): Agentengeführtes Wissenssystem rein auf Basis von Markdown-Dateien und Git-Versionierung. |
 | **context-mode** | [https://github.com/mksglu/context-mode](https://github.com/mksglu/context-mode) | Context Window Optimization & Sandboxing: Reduziert Tool-Outputs in Coding-Agenten um bis zu 98% (z.B. 315 KB auf 5.4 KB in Claude Code), persistiert Session-Memory und routet Tools über 17 Plattformen via MCP und Hooks (26k Stars). |
 | **Headroom** | [https://github.com/headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Kontext-Kompressions-Layer für KI-Agenten: Reduziert Input-Tokens um bis zu 57% (bei JSON/RAG 60–95%) durch intelligentes Pruning, behält aber kritische Logs (z.B. FATAL-Zeilen) byte-genau bei. Desktop-App (`Glance Switch / AG`) läuft lokal auf macOS ohne Cloud-Uploads. |
 | **Karakeep (ehem. Hoarder)** | [https://github.com/karakeep-app/karakeep](https://github.com/karakeep-app/karakeep) | Self-Hostable Bookmark-Everything App: Automatische KI-Verschlagwortung, Volltextsuche, lokale Bild-/Link-Archivierung (auch mit Ollama). Bildet die visuelle Brücke zwischen Web-Recherche (`bdbrainstorm`) und memB Vektor-Gedächtnis. |
 | **Knowledge Work Plugins** | [https://github.com/anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Offizielle Claude Plugins von Anthropic: Offizielles Plugin-Repository für Wissensarbeiter und Entwickler-Workflows. |
+| **llmtrim** | [https://github.com/fkiene/llmtrim](https://github.com/fkiene/llmtrim) | Lokaler LLM-Traffic-Kompressor: Reduziert API-Token (-31% In, -74% Out) bei nur ~5ms Latenz durch semantisch verlustfreie Kompression. |
 | **Mem0** | [https://github.com/mem0ai/mem0](https://github.com/mem0ai/mem0) | Persistente Langzeit-Memory für Agenten: Speichert Konversationen, Entscheidungen und Fakten über Sessions hinweg; verhindert Gedächtnisverlust bei Agenten-Neustarts. |
 | **Outline** | [https://github.com/outline/outline](https://github.com/outline/outline) | Team Knowledge Base & Wiki: Schnelles, schickes Dokumentations- und Wissenssystem (Notion/Confluence-Alternative) für interne Teams und Kundenhandbücher. |
 | **Raven (EverMind)** | [https://github.com/EverMind-AI/Raven](https://github.com/EverMind-AI/Raven) | "The Harness of Harnesses", gebaut für RSI (recursive self-improvement): Host-Agent, der eigene + Third-Party-Agenten (Claude Code, Codex, OpenCode, Hermes, OpenClaw…) orchestriert; EverOS-Memory (Markdown-native, local-first), Evolver bewertet Harness-Änderungen gegen Benchmarks. 4.4k Stars, Apache-2.0, pre-alpha. |
 | **Repowise** | [https://github.com/repowise-dev/repowise](https://github.com/repowise-dev/repowise) | AST Codebase Intelligence & Health MCP: Parst Dependency Graphs, Git-Historie, Tests und Architekturentscheidungen. Verhindert, dass Agenten bei jedem Prompt teuer die gesamte Codebase neu durchsuchen müssen. AGPL-3.0. |
 | **Syncthing** | [https://github.com/syncthing/syncthing](https://github.com/syncthing/syncthing) | Dezentraler Cross-Device Datei-Sync: Peer-to-Peer, Ende-zu-Ende verschlüsselt ohne Cloud. Nützlich zur nahtlosen Replikation von `~/.aos/` Konfigurationen, Worktrees und memB Embeddings zwischen MacBook und stationärem GPU-Rig. |
+| **trim-1** | [https://github.com/caveman-ai/trim-1](https://github.com/caveman-ai/trim-1) | Ultra-schneller Build-Log-Trimmer: Slicet gigabytelange Compiler- und CI/CD-Logs auf den exakten Fehlerkontext für LLM-Prompts herunter. |
+| **Understand Anything** | [https://github.com/Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | Interaktive Codebase-Wissensgraphen: Generiert dynamische Architektur- und Abhängigkeitsgraphen aus Code und Dokumentation für Coding-Agenten. |
 
 ---
+
 ## 5. Security, Pentesting, CI/CD & Verification Gates
 
-*Anzahl kuratierter Tools: 7*
+*Anzahl kuratierter Tools: 10*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
@@ -170,11 +193,15 @@
 | **Pullfrog** | [https://github.com/pullfrog/pullfrog](https://github.com/pullfrog/pullfrog) | BYOK CodeRabbit in GitHub Actions: Autonome PR-Reviews, automatisches Beheben von CI-Fehlern, Merge-Konflikten und Issue-Triage direkt in CI/CD mit Claude, Codex, Grok oder OpenCode. |
 | **security-audit-skill (Cloudflare)** | [https://github.com/cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | Coding-Agent-Skill für mehrphasige Security-Audits mit unabhängig verifizierten, maschinenlesbaren Findings. Vergleichbar mit Strix / Claude-BugHunter (Kat. 1). |
 | **Strix** | [https://github.com/usestrix/strix](https://github.com/usestrix/strix) | Autonomer AI Penetration Testing Agent: Testet Web-Apps und APIs wie ein echter Hacker. Validiert Schwachstellen, generiert PoC-Exploits und liefert Fixes. Go / Bubble Tea TUI. Ideal als Gate-Check vor Releases. |
+| **Tracecat** | [https://github.com/TracecatHQ/tracecat](https://github.com/TracecatHQ/tracecat) | Open-Source AI-Native Security Automation (SOAR): Orchestriert Agenten, MCP-Tools und Incident-Playbooks auf Basis von Temporal. |
+| **Watermarks Remover** | [https://github.com/guillaumemoyer/watermarks-remover](https://github.com/guillaumemoyer/watermarks-remover) | AI-Provenance & Hygiene Service (23.4k Stars): Entfernt unsichtbare Unicode-Wasserzeichen, C2PA-Marker und KI-Fingerprints aus Texten und Code. |
+| **Zerra** | [https://github.com/zerra-ai/zerra](https://github.com/zerra-ai/zerra) | Local-First Blue-Team AppSec-Scanner: Findet Schwachstellen und Secrets in Repos, verifiziert Fixes in Sandboxes und generiert automatische Pull Requests ohne Telemetrie. |
 
 ---
+
 ## 6. Frontend, UI-Komponenten & Design Systems (Godmode UI/UX)
 
-*Anzahl kuratierter Tools: 51*
+*Anzahl kuratierter Tools: 54*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
@@ -184,12 +211,14 @@
 | **Anatomy** | [https://github.com/wheresryan22/anatomy](https://github.com/wheresryan22/anatomy) | Interaktive 3D/SVG-Zerlegung als Agent-Skill: Erklärt Konzepte und Architekturen, indem es sie als funktionierendes, interaktives isometrisches 3D-Objekt aus präzisen Einzelteilen (SVG, WebGL, 3D) generiert (`npx skills add wheresryan22/anatomy`). |
 | **Animos** | [https://animos.app](https://animos.app) | Browserbasiertes Tool zur Erstellung und zum Export (MP4) von ansprechenden UI-Animationen und Produkt-Showcases. |
 | **ascii.rest** | [https://ascii.rest/](https://ascii.rest/) | Animierte ASCII-Art für Webseiten (von @bas3line). Design-Inspiration. |
+| **Awwwards Skill (/awwwards)** | [https://github.com/juliobsz/skills](https://github.com/juliobsz/skills) | High-Agency Frontend-Designer Skill: Erstellt preisverdächtige Websites aus einem Einzeiler inklusive visueller Browser-Validierung. |
 | **Backgrounds Supply** | [https://backgrounds.supply](https://backgrounds.supply) | Hochwertige Texturen, Gradients und Mesh-Hintergründe für Hero-Sections und moderne Webseiten. |
 | **Chakra UI** | [https://chakra-ui.com](https://chakra-ui.com) | Einfaches Styling-System mit modularen, zugänglichen Komponenten für schnelles Prototyping. |
 | **Claude Code Mods** | [https://github.com/nateherkai/claude-code-mods](https://github.com/nateherkai/claude-code-mods) | 4 unverzichtbare UI-Mods für Claude Code: 1. `CacheKeeper` (Echtzeit-Timer für 5-Min-Cache-Expiry, Token-Kosten-Warnung), 2. `Goal Tracker` (visueller Fortschrittsbalken & Subtask-Liste), 3. `Collision Guard` (erkennt Datei-Konflikte bei mehreren parallelen Sessions, Worktree-Prompt), 4. `Next Steps` (Aktionsvorschläge nach jedem Turn). |
 | **Claude Code Mods (News)** | — | ClaudeDevs (X) &#124; News-Impuls: Claude Code ist jetzt moddable — Mods aus TypeScript in Plugins (`/plugin`), UI-Verhalten, Statuslines (z.B. "Token Weather") austauschbar. Relevant für AOS-Plugin-Strategie. &#124; `IMG_7033` |
 | **Claude Code Templates** | [https://github.com/davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | Interactive Web Interface & 100+ Production-Ready Templates: Multi-Agent Collaboration, Live-Visualisierung des Reasonings. Dient als direkter Blueprint zur Modernisierung der `aos store ui` (Port 4322) und des Launchpads (Port 7900) mit One-Click-Testlauf. |
 | **Componentry** | [https://github.com/harshjdhv/componentry](https://github.com/harshjdhv/componentry) | Animierter React-Component-Library (Partikel-Typografie, Liquid-Glass, WebGL-Gradients, Kinetic Text); Install via `npx shadcn @latest add @componentry/...` + MCP. Vercel-OSS-backed. |
+| **Desigma** | [https://github.com/deepfounder-ai/desigma](https://github.com/deepfounder-ai/desigma) | Local-First Open-Source UI-Design-Tool in Rust: Figma-Import, Vektorbearbeitung und Offline-Erstellung ohne Cloud-Zwang. |
 | **designlang** | [https://github.com/Manavarya09/design-extract](https://github.com/Manavarya09/design-extract) | `npx designlang <url>` extrahiert komplette Design-Systeme von Live-Websites: W3C-DTCG-Tokens (primitive/semantic/composite), Tailwind-Config, Figma-Variablen, shadcn-Theme, Brand-Book-PDF, MCP-Server für Claude Code/Cursor, WCAG-Remediation. ~4k Stars, MIT. Passt exakt zu DTCG-/Token-Disziplin von Godmode UI/UX. |
 | **diagram-design** | [https://github.com/cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | Redaktioneller Diagramm-Skill für Claude Code / Codex: Erzeugt 42 Diagramm-Typen als sauberes, schattenfreies HTML + SVG. Kein generisches Mermaid-Layout, hohe visuelle Eleganz. |
 | **Farm.js** | [https://github.com/farming-labs/farm.js](https://github.com/farming-labs/farm.js) | Fullstack Product Framework: Verbindet Vite's Entwicklungsgeschwindigkeit mit typisiertem App-Directory-Routing, Server Actions und Streaming SSR. Unterstützt React, Solid, Vue und Svelte. |
@@ -207,6 +236,7 @@
 | **Logo Design Skill** | [https://github.com/kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | 1.400+ SVG-Referenzen mit automatischen CLI-Prüfskripten (16px-Test, Squint-Test, Mirror-Test) für Claude. |
 | **Magic UI** | [https://magicui.design](https://magicui.design) | Spezialisiert auf Landing Pages: Animierte Texte, Marquees, Grids, Spotlight-Karten und Shader-Effekte. |
 | **Mantine** | [https://mantine.dev](https://mantine.dev) | 100+ React-Komponenten und Hooks für funktionale Web-Applikationen und komplexe Interfaces. |
+| **Marketing Psychology Skill** | — | Gezielte Anwendung von 50+ kognitiven Heuristiken (Loss Aversion, Social Proof, Scarcity, Anchor Effect) auf UI-Copywriting und Funnel-Strukturierung. |
 | **Mobbin** | [https://mobbin.com](https://mobbin.com) | Echte UI/UX-Screenflows aus populären Mobile- und Web-Apps zur Analyse von Navigationsmustern. |
 | **MUI** | [https://mui.com](https://mui.com) | Etabliertes Ökosystem für komplexe Enterprise-Dashboards, Datentabellen und Formularlandschaften. |
 | **OpenBot** | [https://github.com/CopilotKit/openbot](https://github.com/CopilotKit/openbot) | Self-Hosted AI Coworker Stack: Open-Source-Plattform mit AG-UI, Browser- und Tool-Rechten auf eigener Infrastruktur für interne Mitarbeiter-Agenten. |
@@ -231,13 +261,15 @@
 | **Whiteboard** | [https://github.com/devdotfast/whiteboard](https://github.com/devdotfast/whiteboard) | Open-Source Canvas für Mensch-Agent-Design: Desktop-App mit SDK für Claude Code und Codex, auf dem Agenten Systemarchitekturen, Flussdiagramme und UI-Konzepte visuell live aufzeichnen können. MIT. |
 
 ---
+
 ## 7. Video Generation, Creative Media Tech & Remotion (Godmode Media)
 
-*Anzahl kuratierter Tools: 44*
+*Anzahl kuratierter Tools: 46*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
 | **Aceternity UI** | [https://ui.aceternity.com](https://ui.aceternity.com) | Hochwertige Micro-Interactions, 3D-Karten, animierte Hintergründe und Framer Motion Effekte (v2.0). |
+| **AGRec** | [https://github.com/huipengli0708-dot/AGRec](https://github.com/huipengli0708-dot/AGRec) | Screen-Recording- und Walkthrough-Capture für macOS: Aufzeichnung von Agenten-Demos und visuellen Testabläufen. |
 | **ai-clipping-generator** | [https://github.com/SamurAIGPT/ai-clipping-generator](https://github.com/SamurAIGPT/ai-clipping-generator) | AI Video Clipping SaaS-Starter: Extrahiert virale Shorts, Reels und TikToks automatisch aus YouTube-Videos (Next.js, Stripe, Prisma). |
 | **ani-cli** | [https://github.com/pystardust/ani-cli](https://github.com/pystardust/ani-cli) | Leichtgewichtiges POSIX-Shell CLI-Tool zum schnellen Streamen und Scrapen von Anime im Terminal. |
 | **Animate (Claude Code)** | [https://github.com/cth9191/animate](https://github.com/cth9191/animate) | Procedural Animation in any style for Claude Code: Erstellt animierte Videos vollständig im Code via `<canvas>`, deterministisches Frame-by-Frame Rendering nach MP4 via Headless Browser + ffmpeg. |
@@ -246,6 +278,7 @@
 | **Awesome Seedance** | [https://github.com/LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance) | Evidenzbasierte Prompt-Bibliothek für Seedance 2.5 / 2.0: 600+ überprüfte Prompts, 260+ Cross-Model-Runs, 25 Templates und 50 installierbare Video-Skills. |
 | **brag** | [https://github.com/latent-spaces/brag](https://github.com/latent-spaces/brag) | "You built it. Now brag.": Verwandelt ein fertiges Softwareprojekt mit einem einzigen Terminalbefehl in ein knackiges Launch-Video. |
 | **claude-content-skills** | [https://github.com/Ootto-AI/claude-content-skills](https://github.com/Ootto-AI/claude-content-skills) | Quelle der "Reel Automation Suite": 30+ Klartext-Skills; `reel-analyzer` (Frames+Transkript → Hook, Beats, Pacing), `reel-builder`, `content-factory`. 127 Sterne. Der Name "Reel Automation Suite" steht nicht im Repo. |
+| **claude-motion** | [https://github.com/whaleyxbt/claude-motion](https://github.com/whaleyxbt/claude-motion) | Motion-Design-Toolkit für Coding-Agenten: Remotion-Erweiterung mit visuellen Geschmacksregeln, automatischer Frame-Prüfung, Sound-Engine und Web-Sim-Rendering (60 fps). |
 | **claude-reels** | [https://github.com/iamachilles/claude-reels](https://github.com/iamachilles/claude-reels) | Schnitt und Untertitel (ffmpeg, HyperFrames, mlx-whisper) |
 | **claude-video** | [https://github.com/bradautomates/claude-video](https://github.com/bradautomates/claude-video) | "Give Claude the ability to watch any video": `/watch` lädt das Video, extrahiert Frames, transkribiert und übergibt alles an Claude. Dritter Kandidat neben Claude-Watch und Watch Skill (Kat. 1 / 8.1). README geprüft (MIT): voll lokal mit `local`-Engine (Python 3.10+, ffmpeg, yt-dlp, WhisperX; ca. 3 GB Platz, 8 GB RAM); Gemini/Groq/OpenAI sind optionale Cloud-Wege (Gemini lädt Videos zu Google hoch). Instagram Reels sind in der README nicht erwähnt — yt-dlp kann sie evtl. laden, ungetestet. |
 | **claude-video** | — | siehe Kat. 9.1 &#124; `/watch`: Download, Frames, WhisperX lokal &#124; MIT &#124; ja &#124; Analyse-Baustein |
@@ -262,7 +295,7 @@
 | **`IMG_7005`** | — | Instagram-Reel "Someone Open-Sourced an Entire AI Company — 250+ agents" (theautomationguy.ai) &#124; ❓ Repo nicht auflösbar aus dem Screenshot (kein Repo-Name sichtbar). Falls bekannt, nachtragen. |
 | **`IMG_7021`** | — | watch-skill vs. Claude-Watch (Kat. 1) &#124; 🔁 Ähnlich, nicht identisch — gleiche Zweckklasse (Video→Evidence für Agenten), verschiedene Repos. Beide behalten. |
 | **Luma-Dream-Machine-Pro-Premium-Edition** | [https://github.com/Dragonkrebaza](https://github.com/Dragonkrebaza) | Prompt-/Presets-Sammlung für Luma Dream Machine (Video-Generierung). Qualität unklar — tief priorisiert. |
-| **ManimGx** | [https://github.com/ManimGx/ManimGx](https://github.com/ManimGx/ManimGx) | GPU-beschleunigte 3D-Animationsengine: Rust- und wgpu-basierter Drop-in-Ersatz für Manim CE. Rendert Animationen bis zu 90x schneller als ManimCE (36s 1080p60 Video in 3s auf M4 Pro). |
+| **ManimGx** | [https://github.com/academa-labs/manimgx](https://github.com/academa-labs/manimgx) | GPU-beschleunigte 3D-Animationsengine: Rust- und wgpu-basierter Drop-in-Ersatz für Manim CE. Rendert Animationen bis zu 90x schneller als ManimCE (36s 1080p60 Video in 3s auf M4 Pro). |
 | **Mortiflix** | [https://github.com/gtkottman/mortiflix-oss](https://github.com/gtkottman/mortiflix-oss) | A Motion Design Studio on your machine: Open-Source Motion Design Engine für programmgesteuertes Rendern. Direkte Bereicherung für den `video-motion-assistant`. |
 | **Motionmaxxing (FinalMotion)** | [https://github.com/Tejashmakwana/motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | Looksmaxxing for Motion Graphics: Verwandelt AI-Video-Slop in professionelles Motion-Design. 53 vermessene Momente, 12 Easing-Kurven, 150 Regeln, G0–G5 Mog-Checks via ffmpeg. Perfekter Qualitäts-Linter für den `video-motion-assistant` und die Creator Extension. |
 | **muapi-comfyui** | [https://github.com/SamurAIGPT/muapi-comfyui](https://github.com/SamurAIGPT/muapi-comfyui) | ComfyUI Custom Nodes für 600+ Modelle: Zugriff auf Seedance, Kling, Veo3, Flux, HiDream und Imagen4 über muapi.ai. |
@@ -283,6 +316,7 @@
 | **Watch Skill · DeepWatch** | [https://github.com/oxbshw/watch-skill](https://github.com/oxbshw/watch-skill) | "Give AI agents eyes, ears, and verifiable results": Video/Audio/Screenshots → persistenter, timestamped Evidence-Index (OCR, Whisper, 1800+ Quellen); 39 MCP-Tools + CLI + REST; THE LOOP (capture→critique→fix→verify) prüft Agentenarbeit deterministisch. Functional twin von Claude-Watch (s. Kat. 1) — andere Codebasis. |
 
 ---
+
 ## 8. Hardware, Robotics & PCB Engineering
 
 *Anzahl kuratierter Tools: 3*
@@ -294,9 +328,10 @@
 | **Text-to-CAD** | [https://github.com/earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | 3D-CAD Superpowers für Coding-Agenten: Generiert lokale STEP-, GLB-, STL- und 3MF-Modelle via Build123d und OpenCASCADE, führt DFM-Prüfungen durch und erstellt technische Zeichnungen für Fertigungsdienstleister (17k Stars). |
 
 ---
+
 ## 9. Cloud Infrastructure, Flotten-Management & SaasEngine
 
-*Anzahl kuratierter Tools: 13*
+*Anzahl kuratierter Tools: 16*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
@@ -305,16 +340,20 @@
 | **Claude Skills Founder (Pricing Strategy)** | [https://github.com/emotixco/claude-skills-founder](https://github.com/emotixco/claude-skills-founder) | SaaS-Pricing & Founder Toolkit für Claude Code: Befehle wie `/founder:pricing-strategy` zur systematischen Evaluierung von Preismodellen, Tier-Strukturen und Unit Economics direkt im Terminal. |
 | **Coolify** | [https://github.com/coollabsio/coolify](https://github.com/coollabsio/coolify) | Open-Source PaaS (Heroku / Vercel Alternative): Zentrale Orchestrierung für Bare-Metal- und Cloud-Server via SSH. Ideal für die BDB-Flotten-Bereitstellung von Apps, Datenbanken und Services ohne Vendor Lock-in. |
 | **golive-skill** | [https://github.com/mikehasa/golive-skill](https://github.com/mikehasa/golive-skill) | Agent-Skill + Node-CLI (ohne Abhängigkeiten): bringt ein Agent-Produkt live (Hosting, DB, Domain, E-Mail, Payments) auf eigenen Accounts; Ablauf detect → plan → approve → apply → verify. Kein Backend, keine Telemetrie. README geprüft (MIT): Zugangsdaten liegen im Klartext in `~/.config/golive/credentials` (Modus 0600); braucht Accounts bei Vercel/Netlify, Supabase/Neon, Registrar, Resend, Stripe. |
+| **gstack** | [https://github.com/garrytan/gstack](https://github.com/garrytan/gstack) | Production-Ready Fullstack-Templates von Garry Tan für schnelles Software-Scaffolding und Deployments. |
 | **InsForge** | [https://github.com/insforge/insforge](https://github.com/insforge/insforge) | All-in-one Backend Platform for Agentic Coding: Schnelles, agenten-optimiertes Backend-System mit Datenbank, Auth und APIs (191k Downloads). |
 | **Mixpost** | [https://github.com/inovector/mixpost](https://github.com/inovector/mixpost) | Self-Hosted Social Media Management: Open-Source-Alternative zu Buffer und Hootsuite. Multi-Account-Planung, Analytics und Medien-Verwaltung auf eigener Infrastruktur. |
 | **Offizielle Cloud MCP Server** | — | Provider-Verzeichnis &#124; Vercel (`vercel/next-devtools-mcp`), Cloudflare (`cloudflare/mcp-server-cloudflare`), GCP (`GoogleCloudPlatform/cloud-run-mcp`), Tencent Cloud & Hostinger. &#124; `IMG_7147` |
 | **Paperless-ngx** | [https://github.com/paperless-ngx/paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Supercharged Document Management System: Scannt, archiviert, taggt und durchsucht Rechnungen, Verträge und Belege automatisch per OCR. Relevante Backend-Infrastruktur für Agentur-Playbooks (`pb-invoice-check`). |
 | **Plexo** | [https://github.com/anmolkapil/plexo](https://github.com/anmolkapil/plexo) | Multi-Network Bonding Download Manager: Bündelt parallele Internetverbindungen (WLAN, Ethernet, USB-Tethering) in parallele Streams für maximale Download-Geschwindigkeiten. |
+| **Postiz** | [https://github.com/gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | Open-Source AI Social Media Scheduler (35k Stars): Multi-Platform-Scheduling, Content-Planung und Analytics (Next.js, Prisma, BullMQ). |
 | **Send** | [https://github.com/timvisee/send](https://github.com/timvisee/send) | Verschlüsselter Dateiversand mit automatischer Löschung: Sicheres, flüchtiges Bereitstellen von Produktionsartefakten aus `production_artifacts/` an externe Partner mit Ablauf-Timer. |
 | **Shipyard** | [https://github.com/cosscom/shipyard](https://github.com/cosscom/shipyard) | Run Coding Agents on Remote Dev Machines: Verlagert Coding-Agenten vom Laptop auf VPS, Cloud-VMs oder Heimserver. Jeder Agent läuft in eigenem Git-Worktree mit Dev-Server. Mac-App mit Kanban-Status. |
 | **Shoutrrr / Shouter** | [https://github.com/coollabsio/shoutrrr](https://github.com/coollabsio/shoutrrr) | Social Media Scheduler (Buffer / Typefully Alternative): Zentrales Verfassen und zeitgesteuertes Ausspielen von Beiträgen auf X, LinkedIn, Instagram und Bluesky. Self-hosted über Docker/Coolify. |
+| **Twelve Dollar Server Challenge** | — | Rust/epoll-basierte Hochleistungs-Serverarchitektur (rust-epoll-scooter): Benchmark für extreme Concurrency-Lasten auf Minimal-Hardware ($12/Monat). |
 
 ---
+
 ## 10. Web Scraping, Lead Generation & Extraction Tools
 
 *Anzahl kuratierter Tools: 1*
@@ -324,13 +363,15 @@
 | **Google Maps Scraper Kit** | [https://github.com/Mahanaicoach/google-maps-scraper-kit](https://github.com/Mahanaicoach/google-maps-scraper-kit) | Lokaler Google Maps Scraper mit Docker & Claude Skill: Kostenloser lokaler Lead-Scraper ohne externe API-Kosten. |
 
 ---
+
 ## 11. Reverse Engineering & Binary Analysis
 
-*Anzahl kuratierter Tools: 2*
+*Anzahl kuratierter Tools: 3*
 
 | Name | Repository / Link | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
 | **Cutter** | [https://github.com/rizinorg/cutter](https://github.com/rizinorg/cutter) | Free & Open-Source Reverse Engineering Platform: Powered by Rizin / Radare2 mit Ghidra Decompiler. Erweitert das Security-Review-Portfolio (`security-reviewer`) um tiefe Binäranalyse und Disassembly. |
+| **Ghidra (NSA)** | [https://github.com/NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra) | Premier Software Reverse Engineering Suite (55k+ Stars): Disassembler, Decompiler und interaktiver Code-Graph für Windows, macOS und Linux. |
 | **REA (Reverse Engineer Anything)** | [https://github.com/morluto/rea](https://github.com/morluto/rea) | Reverse Engineering MCP für Agenten: Ermöglicht Coding-Agenten das automatisierte Analysieren und Decompilieren von Binärdateien, Web-APIs und App-Interna. #3 Trending Repo of the Day. |
 
 ---
