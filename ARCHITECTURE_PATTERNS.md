@@ -1,187 +1,331 @@
-# ⚡ AOS 5.5 System Architecture & Engine Blueprint
+# ⚡ AOS 5.5 Master Architecture & Model Routing Catalog
 
-> **Kompaktes Handover-Dossier für autonome Agenten (Claude Code, Antigravity, OpenCode).**  
-> *Synthese aus Screen-Captures, Whitepapers und System-Designs aus `Neuer Ordner mit Objekten 4` und den vorangegangenen Audit-Runden.*
+> **Synthese aller 14 Systemarchitekturen, Topologien und Modell-Routings aus über 80 Bildnachweisen**  
+> *Für autonome Agenten (Claude Code, Antigravity, OpenCode, Codex CLI, GLM, DeepSeek).*
 
 ---
 
-## 1. Andrew Ng: Graph Engineering vs. Loop Engineering
-*Quelle: Andrew Ng (DeepLearning.AI), July 2026 Compilation*
+## 📑 Inhaltsübersicht der 14 Schemas
+1. [Frontier Tri-Model Setup (Sonnet / Haiku / Opus)](#1-frontier-tri-model-setup-sonnet-drives-haiku-scouts-opus-signs-off)
+2. [Inverted Tree: Fable 5.1 Advisor / Opus 5.5 Works](#2-inverted-tree-fable-51-on-call--opus-55-works)
+3. [Context Shielding Architecture (-412k Tokens)](#3-context-shielding-architecture--412k-tokens-gespart)
+4. [OpenRig: Cross-Harness YAML Rig (Claude Code + Codex)](#4-openrig-cross-harness-yaml-rig-claude-code--codex)
+5. [Multi-Harness Cross-Agent BugHunter Pipeline](#5-multi-harness-cross-agent-bughunter-pipeline)
+6. [Blackbit Multi-Model Tiering Architecture](#6-blackbit-multi-model-tiering-architecture)
+7. [Token & Cost Optimization Pipeline (8-Stufig)](#7-token--cost-optimization-pipeline-8-stufig)
+8. [The Self-Evolving Agent Harness (4 Layers)](#8-the-self-evolving-agent-harness)
+9. [Andrew Ng: Graph Engineering vs. Loop Engineering](#9-andrew-ng-graph-engineering-vs-loop-engineering)
+10. [Ultra Lab & Anthropic: 15 AI Agent Design Patterns](#10-ultra-lab--anthropic-15-ai-agent-design-patterns)
+11. [Autonomous 4-Eyes Software Factory Pattern](#11-autonomous-4-eyes-software-factory-pattern)
+12. [High-Throughput Ticket Waiting Room (20k req/s)](#12-high-throughput-ticket-waiting-room-20k-reqs-system-design)
+13. [Paperthin: Cross-Harness Reflex Injection](#13-paperthin-cross-harness-reflex-injection)
+14. [REA Studio: 20 Repos Clean-Room Loop](#14-rea-studio-20-repos-clean-room-loop)
 
-### Kernargument & Paradigmenwechsel
-Ein einfaches Basis-Modell löst **48.1%** auf HumanEval (Zero-Shot). Im iterativen ReAct-Workflow steigt der Wert auf **95.1%**. Der Qualitätsgewinn durch Architektur übersteigt den Generationssprung des Modells.
+---
 
-* **ReAct-Loops:** externalisieren lediglich die *Revisionsschleife*.
-* **Chains:** externalisieren die *Reihenfolge der Schritte*.
-* **Networks/Swarms:** externalisieren *Rollen-Spezialisierungen*.
-* **State Graphen (AOS 5.5 Ziel):** externalisieren **geteilten Zustand (Shared State) und Beziehungen**. Arbeiter müssen Fakten über Sessions hinweg erhalten, ohne gigantische Transkripte zu kopieren.
+## 1. Frontier Tri-Model Setup: Sonnet Drives, Haiku Scouts, Opus Signs Off
+*Quellen: `IMG_7229.PNG`, `IMG_7230.PNG`, `IMG_7365.PNG`, `IMG_7494.jpg` (@mirku21 & @rvaniaaa)*
+
+### Grundsatz
+> *"Stop burning Opus 5.5 context on tasks Haiku 5.5 can swarm, while Sonnet 5.5 builds."*
+
+```bash
+$ claude --model sonnet --advisor opus --subagents haiku
+```
 
 ```
-[User] ──(In-Loop Feedback)──> [Architect Agent] ──(Shares Data)──> [AI Document / State Graph]
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ [HAIKU 5.5 EXPLORE / SWARM]                                                            │
+│ * Scouts repo & docs read-only (15 files read, 0 docs pulled).                         │
+│ * High speed: 340 tok/s. Kosten: bis zu 40x weniger als Opus.                          │
+└────────────────────────────────────────┬───────────────────────────────────────────────┘
+                                         ▼ (Fast Findings)
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ [SONNET 5.5 THE DRIVER - MAIN SESSION]                                                 │
+│ * Drives the session on high effort.                                                   │
+│ * Edits source code, runs build & test suites, builds components.                      │
+└────────────────────────────────────────┬───────────────────────────────────────────────┘
+                                         ▼ (Checkpoints)
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ [OPUS 5.5 ADVISOR - ON CALL] (Re-reads session, signs off, advises)                    │
+│ Gerufen an EXAKT DREI PUNKTE:                                                          │
+│   1. Before locking a plan or schema.                                                  │
+│   2. When the same test / build error occurs TWICE.                                    │
+│   3. Before saying 'done' (pre-flight diff review).                                    │
+│ Ruht sonst komplett (0 Waits, kein Context-Pollution).                                 │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 2. Inverted Tree: Fable 5.1 On Call / Opus 5.5 Works
+*Quelle: `IMG_7011.PNG` (Claude Code Agent Tree)*
+
+```
+CLAUDE CODE AGENT TREE - OPUS 5.5 WORKS - FABLE 5.1 ON CALL
+CLI Befehl: /advisor fable
+
+┌───────────────────────────────────────┐         ┌───────────────────────────────────────┐
+│ FABLE 5.1 - ADVISOR                   │         │ OPUS 5.5 - MAIN SESSION               │
+│ * On call - reads it all.             │ <-----> │ * Runs primary execution on high.     │
+│ * Writes zero lines of code.          │         │ * Writes core logic, runs compilers.  │
+│ * Steelsmans specs & enforces checks. │         │                                       │
+└───────────────────────────────────────┘         └───────────────────┬───────────────────┘
+                                                                      │
+                    ┌─────────────────────────────────────────────────┴────────┐
+                    ▼                                                          ▼
+   ┌─────────────────────────────────┐                       ┌─────────────────────────────────┐
+   │ JEV FORK LAYER                  │                       │ SUBAGENTS (MEDIUM)              │
+   │ Deterministische Tiny Choices   │                       │ Parallelisierte Worker          │
+   │ (which file / which tool <0.5s) │                       │ (UI, Tests, Specs)              │
+   └─────────────────────────────────┘                       └─────────────────────────────────┘
+```
+
+---
+
+## 3. Context Shielding Architecture (-412k Tokens Gespart)
+*Quellen: `IMG_7361.PNG`, `IMG_7362.jpg` (@damkina7)*
+
+```
+                               ┌──────────────────────────────────────────────┐
+                               │ OPUS 5.5 HIGH - MAIN SESSION ARCHITECT       │
+                               │ Context: 14k clean tokens | Designs Topology │
+                               └──────────────────────┬───────────────────────┘
+                                                      │
+         ═════════════════════════════════════════════╪═══════════════════════════════════════════
+         CONTEXT SHIELD (Absorbiert 412k Tokens Rauschen: AST, Specs, Build-Logs, Git-Trees)
+         ═════════════════════════════════════════════╪═══════════════════════════════════════════
+                                                      │
+                        ┌─────────────────────────────┼─────────────────────────────┐
+                        ▼                             ▼                             ▼
+         ┌────────────────────────────┐┌────────────────────────────┐┌────────────────────────────┐
+         │ ComponentBuilder           ││ MotionAndTest              ││ BuildWorker                │
+         │ Sonnet 5.5 (Medium)        ││ Haiku 5.5 (Medium)         ││ Haiku 5.5 (Medium)         │
+         │ Assembles schemas, routes  ││ Compiling 60 FPS spring    ││ Headless bundle typecheck  │
+         │ & React UI.                ││ physics, AST checks.       ││ Zero log pollution to main.│
+         └────────────────────────────┘└────────────────────────────┘└────────────────────────────┘
+```
+
+---
+
+## 4. OpenRig: Cross-Harness YAML Rig (Claude Code + Codex)
+*Quelle: `IMG_7008.PNG` (mvschwarz/rig)*
+
+```yaml
+# RigSpec.yaml - Multi-Agent Fleet
+name: bdb-production-rig
+agents:
+  architect:
+    harness: claude-code
+    model: claude-3-7-sonnet
+    role: system-planning
+  backend_core:
+    harness: codex-cli
+    model: o3-mini
+    role: rust-tauri-engine
+  auditor:
+    harness: antigravity
+    model: gemini-2.5-pro
+    role: verification-gate
+```
+
+* `$ rig up`: Bootet alle tmux-Sessions mit einem Befehl.
+* `$ rig status`: Topologie-Graph TUI.
+* `$ rig broadcast "GO"`: Synchroner Befehl an alle Agenten.
+
+---
+
+## 5. Multi-Harness Cross-Agent BugHunter Pipeline
+*Quelle: `IMG_6909.PNG` (Claude-BugHunter)*
+
+```
+                ┌────────────────────────────────────────────────────────┐
+                │ 6-PHASEN MULTI-HARNESS SECURITY PIPELINE               │
+                │ Unterstützt: Claude Code, OpenCode, Codex CLI, Hermes  │
+                └───────────────────────────┬────────────────────────────┘
+                                            ▼
+┌──────────────────────────────┐┌──────────────────────────────┐┌──────────────────────────────┐
+│ 1. Recon & Attack Surface    ││ 2. Tool Ports & Burp MCP     ││ 3. 7-Fragen Validierungs-Gate│
+│ Codex TOML / Claude YAML     ││ OpenCode JSON / Burp Suite   ││ Tötet False-Positives        │
+│ Frontmatter-Validierung      ││ Interceptor Schnittstellen   ││ VOR dem Report-Schreiben     │
+└──────────────────────────────┘└──────────────────────────────┘└──────────────────────────────┘
+```
+
+---
+
+## 6. Blackbit Multi-Model Tiering Architecture
+*Quellen: `IMG_7306.PNG`, `IMG_6911.jpg` (blackbit.sh / CyrilXBT)*
+
+```
+                 [Incoming User Request]
+                            │
+                            ▼
+           [Opus 5.5: Task Decomposition & Master Plan]
+                            │
+         ┌──────────────────┼──────────────────┐
+         ▼                  ▼                  ▼
+  [DeepSeek / GLM]    [Gemini Flash]    [Sonnet / Codex]
+  Code Scaffolding    Fast Scraping     Complex Systems
+  & Bulk Functions    & Text Parsing    & Refactoring
+```
+
+---
+
+## 7. Token & Cost Optimization Pipeline (8-Stufig)
+*Quelle: `IMG_7363.PNG` (@rvaniaaa)*
+
+| Stufe | Tool / Engine | Mechanismus & Ersparnis |
+|---|---|---|
+| **1. Routing** | `claude-code-router` | Routet Grep und triviale Abfragen auf billigste Modelle; nur Hard Parts an Opus. |
+| **2. Bash Pruning** | `rtk` | Kürzt rohe Terminal-Outputs (Test, Build, Git) um bis zu **90%**, bevor das LLM sie sieht. |
+| **3. Symbol Lookup** | `token-savior` | Zielt exakt auf Symboldefinitionen statt ganze 2000-Zeilen-Dateien zu laden. |
+| **4. Selective Memory** | `claude-mem` | Bringt nur exakt den für den aktuellen Task relevanten Teil aus alten Sessions zurück. |
+| **5. Line Slicing** | `context-mode` | Lokale SQLite-DB; streamt nur die tatsächlich benötigten Codezeilen ins Fenster. |
+| **6. Graph Navigation** | `code-review-graph` | Repräsentiert die Codebase als AST-Graph; verhindert vollständiges Rescannen. |
+| **7. Micro Choices** | `jev-ultrafast` | Trifft Klick-, Retry- und Tool-Wahlen deterministisch in <0.5s ohne API-Aufruf. |
+| **8. Telegraphic Style** | `caveman` | Zwingt das Modell zu knappen Antworten; Code bleibt identisch, spart Output-Tokens. |
+
+---
+
+## 8. The Self-Evolving Agent Harness
+*Quellen: `IMG_7486.PNG`, `View recent photos.png` (Rakesh Gohel @techwith.ram)*
+
+```
+                                      [Input Task]
+                                           │
+                                           ▼
+                                 [Perception Layer]
+                                           │
+                                           ▼
+                               [Reasoning Engine / LLM]
+                             (Chain-of-Thought / ReAct)
+                                           │
+                                ┌──────────┴──────────┐
+                     (Direct Answer?)             (Complex Goal?)
+                                │                         │
+                                ▼                         ▼
+                            [Output]              [Planning Module]
+                                                  (Step 1 -> 2 -> 3)
+                                                          │
+                                                          ▼
+                                              [Protected Competence]
+                                           Every update must earn its way in!
+                                           ┌──────────────────────────────┐
+                                           │ Gate 1: Quality Gate         │
+                                           │ Gate 2: Performance Gate    │
+                                           └──────────────┬───────────────┘
+                                                          │
+                                         ┌────────────────┴────────────────┐
+                                     (REJECT)                          (ACCEPT)
+                                         ▼                                 ▼
+                                   [Rollback]                     [Self-Update Unit]
+                                                                  (Self-Rewrite Prompts,
+                                                                   Update Checkpoints,
+                                                                   τ_fail Alignment)
+```
+
+---
+
+## 9. Andrew Ng: Graph Engineering vs. Loop Engineering
+*Quellen: `IMG_7502.PNG`, `IMG_7503.jpg` (Andrew Ng, DeepLearning.AI)*
+
+```
+[User] ──(In-Loop Feedback)──► [Architect Agent] ──(Shares Data)──► [AI Document / State Graph]
    ▲                                 │                                          ▲
    │                           (Handoff: Spec)                                  │
    │                                 ▼                                          │
-   └──────(In-Loop Feedback)──> [TechLead Agent] ──(Handoff: Slices)────────────┤
+   └──────(In-Loop Feedback)──► [TechLead Agent] ──(Handoff: Slices)────────────┤
    │                                 │                                          │
    │                           (Handoff: Task)                                  │
    │                                 ▼                                          │
-   └──────(In-Loop Feedback)──> [Developer Agent] ──────────────────────────────┘
+   └──────(In-Loop Feedback)──► [Developer Agent] ──────────────────────────────┘
                                   (Analyzes & Responds to Shared State)
 ```
 
 ---
 
-## 2. The Self-Evolving Agent Harness
-*Quelle: Rakesh Gohel (@techwith.ram / @rakeshgohel01)*
+## 10. Ultra Lab & Anthropic: 15 AI Agent Design Patterns
+*Quelle: `IMG_7490.PNG` (ultralab.tw & Anthropic)*
 
-Ein Agent, der seine eigenen Fehler behebt, ohne funktionierenden Code oder Prompts zu zerstören.
-
-### Das 4-Schichten-System
-1. **Perception Layer & Planning:**
-   * **Perceive:** Trennt rohen Input von strukturierten Intentionen.
-   * **Planning Module:** Bricht komplexe Ziele atomar herunter: `Step 1 -> Step 2 -> Step 3`.
-   * **Fast-Path:** Kann die Frage direkt beantwortet werden, erfolgt sofortiger Output ohne Subagent-Overhead.
-2. **Protected Competence (2-Stufen-Gate):**
-   * **Gate 1 (Quality Gate):** Prüft syntaktische und logische Korrektheit gegen Benchmarks.
-   * **Gate 2 (Performance Gate):** Misst Latenz, Token-Verbrauch und Token-Weather.
-   * **Reject:** Bei Regression sofortiges Rollback.
-   * **Accept:** Update wird im Core persistiert.
-3. **Self-Update Unit (Der Self-Improvement Loop):**
-   * **Self-Rewrite:** Schreibt Prompts, Tools und Heuristiken selbstständig um.
-   * **Update Checkpoints:** Transaktionale Snapshots vor jeder Mutation.
-   * **Real Generalization:** Erkennt Muster statt Benchmark-Hacks. Clustert Fehler nach:  
-     `Tool Usage Errors` | `Reasoning Mistakes` | `Planning / Premature Stop` | `One-off Case`.
-4. **Observability & Error Signals:**
-   * **τ_fail vs τ_ref:** Referenz-Alignment identifiziert den exakten Schritt der ersten Divergenz (nicht erst den finalen Crash).
-
----
-
-## 3. Frontier Architecture Suite: Advisor, Swarms & Context Shielding
-*Quelle: @damkina7 & @rvaniaaa*
-
-### Die goldene Regel: *"Plan on High. Delegate on Medium. Keep Opus on Call."*
-
-### Das 3-Ebenen-Routing
-1. **Haiku 5.5 (Scouts & Swarm):**
-   * Scoutet Repos, liest Dokumentation read-only. Kostet bis zu 40x weniger als Opus.
-   * Erledigt schnelle Bash-, Git- und AST-Searches (340 t/s).
-2. **Sonnet 5.5 (The Driver / Main Session):**
-   * Führt den Hauptcode aus, editiert Dateien, baut Komponenten.
-   * Niedrige Latenz, hohe Coding-Präzision.
-3. **Opus 5.5 (Advisor & System Architect):**
-   * Läuft *on call* als Advisor: `claude --model sonnet --advisor opus`.
-   * Wird nur an **3 definierten Checkpoints** gerufen:
-     1. Vor dem Locken eines Plans / Schemas.
-     2. Wenn derselbe Fehler zweimal auftritt.
-     3. Vor dem finalen Ship / Pre-flight Diff Review.
-
-### Context Shielding (-412k Tokens gespart)
-* **Subagent Swarm:** Hohe AST-Searches, Spec-Recherche und Git-Worktrees laufen in isolierten Workern ab.
-* **Context Shield:** 412k Tokens an flüchtigem Rauschen werden in Subagents absorbiert.
-* **Main Context:** Bleibt kristallklar bei **14k Tokens**! Kein Context-Compacting, kein Halluzinieren.
-* **Jev-Fork Layer:** Deterministische Entscheidungen (welche Datei, Retry, Tools) laufen in < 0.5s auf System-1-Ebene, statt teure LLM-Inferenz zu triggern.
-
----
-
-## 4. 15 AI Agent Design Patterns (Ultra Lab & Anthropic)
-*Quelle: Ultra Lab (ultralab.tw) & Anthropic (2024–2026)*
-
-| # | Pattern | Ursprung | Architektonische Regel & Verhalten |
-|---|---|---|---|
-| **01** | **Routing** | Anthropic | Unterschiedliche Input-Typen werden strikt getrennt und an spezialisierte Agenten verteilt. |
-| **02** | **Orchestrator-Workers** | Anthropic | Zentraler Orchestrator koordiniert dynamische Worker; Subtasks können vorab unvorhersehbar sein. |
-| **03** | **Augmented LLM** | Anthropic | Basisbaustein: Inferenz angereichert mit Retrieval (RAG), Tools und Memory. |
-| **04** | **Prompt Chaining** | Anthropic | Aufgabe wird sauber in deterministische, aufeinanderfolgende Schritte zerlegt. |
-| **05** | **Sectioning** | Anthropic | Parallele Ausführung unabhängiger Subtasks zur massiven Latenzreduktion. |
-| **06** | **Autonomous Agent** | Anthropic | Offene Probleme ohne festen Pfad; ReAct-Loop mit Umgebungs-Feedback. |
-| **07** | **Mutex Lock** | Ultra Lab | Eine Ressource (z.B. GPU, Shared Database, Git Branch), viele Jobs: Strikte Queue, niemals paralleles Überschreiben. |
-| **08** | **Evaluator-Optimizer** | Anthropic | Klare Kriterien; ein zweiter Agent bewertet und optimiert den Output messbar. |
-| **09** | **Voting** | Anthropic | Mehrere parallele Durchläufe derselben Aufgabe zur Steigerung der Konfidenz. |
-| **10** | **Quality Gate** | Ultra Lab | Jeder einzelne FAIL blockiert das Scheduling des nächsten Release-Schritts. |
-| **11** | **Human-in-the-loop** | Ultra Lab | Blockiert oder 2x fehlgeschlagen: Sofortiges Anhalten und Übergabe an den Menschen. |
-| **12** | **Fail-Closed** | Ultra Lab | Fehlen von Beweisen oder unvollständige Tests zählen ausnahmslos als FAIL. |
-| **13** | **Retry with Backoff** | Ultra Lab | Netzwerk- oder 5xx-Fehler: Exponentielles Warten vor dem Wiederholungsversuch. |
-| **14** | **Idempotency Key** | Ultra Lab | Wiederholte Ausführungen führen niemals zu doppelten Aktionen oder Posts. |
-| **15** | **Observability** | Ultra Lab | Jeder einzelne Tool-Call wird lückenlos mit Tokens, Kosten und Turns protokolliert. |
-
----
-
-## 5. Autonomous 4-Eyes Factory Pattern
-*Quelle: zazencodes / claude-code-software-factory*
-
-### Deterministischer Build- & Review-Zyklus
-```
-                  [Feature Request]
-                          │
-                          ▼
-                 [Spec-Writer (Opus)]
-                          │
-                          ▼
-                   [Builder (Opus)] <────────────────────────────┐
-                          │                                      │
-         ┌────────────────┼────────────────┬────────────────┐    │ (resume builder
-         ▼                ▼                ▼                ▼    │  max 2 rounds)
-    [Security]          [UX]          [UI Design]        [Code]  │
-      (Opus)          (Sonnet)         (Sonnet)         (Sonnet) │
-         │                │                │                │    │
-         └────────────────┼────────────────┴────────────────┘    │
-                          ▼                                      │
-                [Wait for ALL 4 in] ──(Any Changes Needed)───────┘
-                          │
-                     (All PASS)
-                          ▼
-                   [Approver (Opus)]
-                          │
-            ┌─────────────┴─────────────┐
-            ▼                           ▼
-        (APPROVE)                   (ESCALATE)
-            ▼                           ▼
-     [Merge to Main]              [Needs-Human]
-```
-
----
-
-## 6. REA Studio: 20 Repos für Binary-to-Clean-Room Rebuilds
-*Quelle: @morluto (Opus 5.5 + REA Studio)*
-
-### Das Clean-Room Rebuild Pattern
-1. **Decompile & Inspect:** Extraktion via Ghidra / REA / jadx / ILSpy.
-2. **Traffic Sniffing:** Interception über `mitmproxy` & `frida`.
-3. **Formalize Spec:** Erstellung einer `SPEC.md` mit allen Endpunkten, Structs und Zuständen.
-4. **Clean-Room Implementation:** Rebuild ohne fremden Code zu kopieren.
-5. **Oracle Verification:** Parallele Testläufe gegen das Original bis zu 100% Identität.
-
-### Vollständige Werkzeug-Matrix für Agenten
-| Domäne | Tool / Repo | Agenten-Nutzen & Funktion |
+| Kategorie | Muster | Funktion |
 |---|---|---|
-| **Analysis Core** | `morluto/rea` | Universal Reverse-Engineering MCP Server für Coding-Agenten. |
-| **Analysis Core** | `NationalSecurityAgency/ghidra` | Open-Source Decompiler und Disassembler Suite der NSA. |
-| **Analysis Core** | `LaurieWired/GhidraMCP` | Ermöglicht Agenten das autonome Steuern von Ghidra via MCP. |
-| **Analysis Core** | `mrexodia/ida-pro-mcp` | Agent-Schnittstelle zu Hex-Rays IDA Pro. |
-| **Mobile & Apps** | `skylot/jadx` | DEX/APK to Java Decompiler für Android-Binaries. |
-| **Mobile & Apps** | `iBotPeaches/Apktool` | Zerlegt Android-APKs und baut sie nach Modifikation wieder zusammen. |
-| **Mobile & Apps** | `frida/frida` | Dynamische Code-Injektion und Funktions-Hooking zur Laufzeit. |
-| **Mobile & Apps** | `icsharpcode/ILSpy` | Open-Source .NET Decompiler & Assembly Analyzer. |
-| **Binary & Low-Level** | `radareorg/radare2` | Terminal-natives UNIX Reverse-Engineering-Framework. |
-| **Binary & Low-Level** | `x64dbg/x64dbg` | Nativer x64/x32 Windows Debugger. |
-| **Binary & Low-Level** | `WerWolv/ImHex` | Hex-Editor mit eigener deklarativer Pattern-Sprache. |
-| **Binary & Low-Level** | `angr/angr` | Symbolische Ausführungs-Engine zur automatischen Schwachstellensuche. |
-| **Network & Runtime** | `mitmproxy/mitmproxy` | Interaktiver TLS-Proxy zur HTTP/HTTPS- und WebSocket-Analyse. |
-| **Network & Runtime** | `dnSpyEx/dnSpy` | .NET Debugger und Assembly-Editor. |
-| **Network & Runtime** | `rizinorg/rizin` | Performanter, modularer Radare2-Fork. |
-| **Network & Runtime** | `EpicGames/raddebugger` | Extrem schneller nativer Multi-Process Debugger von Epic Games. |
-| **Collections & Guides** | `zhuyansen/awesome-ai-reverse-engineering` | Kuratierte Liste von 122 AI-gestützten RE-Werkzeugen. |
-| **Collections & Guides** | `morluto/awesome-reverse-engineering` | Offizielle kuratierte RE-Sammlung des REA-Autors. |
+| **Routing & Exec** | Routing, Orchestrator-Workers, Augmented LLM | Klare Rollenverteilung, RAG, Subtask-Dynamik. |
+| **Parallelisierung** | Prompt Chaining, Sectioning, Voting | Deterministische Schritte, parallele Slices, Konfidenzabgleich. |
+| **Zuverlässigkeit** | Mutex Lock, Quality Gate, Fail-Closed | Ressourcensperre, Abbruch bei 1 Fehler, Beweislastprinzip. |
+| **Resilienz** | Retry with Backoff, Idempotency Key, Human-in-the-Loop | 5xx-Handhabung, doppelte Posts verhindern, Escalation bei 2 Fails. |
+| **Transparenz** | Observability, Evaluator-Optimizer | Lückenloses Logging jedes Tokens, iterative Schärfung. |
 
 ---
 
-## 7. High-Throughput Ticket Waiting Room (System Design)
-*Quelle: goatengineer.com (System Design 02)*
+## 11. Autonomous 4-Eyes Software Factory Pattern
+*Quellen: `IMG_7417.jpg`, `IMG_7479.PNG` (zazencodes)*
 
-### Das Problem: 20.000 Requests/Sekunde & Distributed Lock Contention
-Ein naives `UPDATE tickets SET left = left - 1 WHERE event = 42` erzeugt bei 20k req/s einen Datenbank-Kollaps: Ein einziger Row-Lock blockiert tausende Worker, 15.000 Transaktionen laufen ins Timeout.
+```
+Feature ──► Spec-Writer (Opus) ──► Builder (Opus)
+                                        │
+           ┌──────────────┬─────────────┴─────────────┬──────────────┐
+           ▼              ▼                           ▼              ▼
+     Security (Opus)   UX (Sonnet)            UI Design (Sonnet)  Code (Sonnet)
+           │              │                           │              │
+           └──────────────┴─────────────┬─────────────┴──────────────┘
+                                        ▼
+                            [Wait for ALL 4 in]
+                                        │
+                       (Changes?) ──────┴──────► Resume Builder (max 2 rounds)
+                                │
+                            (All PASS)
+                                ▼
+                         Approver (Opus) ──► [Merge to Main] / [Escalate]
+```
 
-### Die skalierbare Architektur
-1. **Virtual Waiting Room / Token Bucket:** Nutzer erhalten eine signierte Queue-Nummer (JWT) im Redis Sorted Set.
-2. **Traffic Slicing:** Nur die exakte Anzahl an Requests, die die Datenbank verarbeiten kann (z.B. 500 req/s), wird sequentiell an den Checkout-Service weitergeleitet.
-3. **Optimistic Decoupling:** Bestände werden vorab in Redis dekrementiert (`DECR` atomar); die persistente DB-Schreibung erfolgt asynchron über Kafka/RabbitMQ-Worker.
+---
+
+## 12. High-Throughput Ticket Waiting Room (20k req/s System Design)
+*Quelle: `IMG_7511.PNG` (goatengineer.com)*
+
+```
+[20,000 Fans/s] ──► [Load Balancer] ──► [Virtual Waiting Room (Redis Token Bucket / JWT)]
+                                                     │
+                             (Gedrosselter Traffic: exakt 500 req/s)
+                                                     ▼
+                                          [12x App Servers]
+                                                     │
+                             (Atomarer DECR in Redis Cache)
+                                                     ▼
+                                 [Async Worker Queue (Kafka / BullMQ)]
+                                                     │
+                                                     ▼
+                                         [Single Tickets Database]
+                                     Kein Row-Lock Timeout! 0 Fails.
+```
+
+---
+
+## 13. Paperthin: Cross-Harness Reflex Injection
+*Quelle: `IMG_7432.PNG` (LilMGenius/paperthin)*
+
+```bash
+$ npx skills add LilMGenius/paperthin --global --agent '*'
+```
+* Läuft identisch auf: **Claude Code, Codex CLI, OpenCode, Antigravity, Copilot, Cursor, Grok-Build, Pi, Hermes**.
+
+---
+
+## 14. REA Studio: 20 Repos Clean-Room Loop
+*Quellen: `IMG_7497.PNG`, `IMG_7498.PNG`, `IMG_7499.PNG` (@morluto)*
+
+```
+Binary / APK / Target
+        │
+        ▼
+[Decompile & Intercept] ──► Ghidra / REA / GhidraMCP / ida-pro-mcp / jadx / mitmproxy / frida
+        │
+        ▼
+[Formalize Spec]        ──► SPEC.md (Typen, Interfaces, Crypto, State Machine)
+        │
+        ▼
+[Clean-Room Rebuild]    ──► Neuer Quellcode ohne fremde Zeilen
+        │
+        ▼
+[Oracle Verification]   ──► Parallel-Execution gegen Target bis 100% Match
+```

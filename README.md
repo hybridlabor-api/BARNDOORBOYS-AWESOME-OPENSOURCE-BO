@@ -4,7 +4,7 @@
 > *Fokus: Agent Operating System (AOS), Multi-Agent Swarms, Computer-Use, Creative Media & SaasEngine.*
 
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Tools](https://img.shields.io/badge/Tools-273%20Kuriert-blue.svg)](#-inhaltsverzeichnis-nach-domänen)
+[![Tools](https://img.shields.io/badge/Tools-287%20Kuriert-blue.svg)](#-inhaltsverzeichnis-nach-domänen)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![AOS](https://img.shields.io/badge/Ecosystem-BDB%20AOS%20v5-purple.svg)](https://github.com/barndoorboys)
 
@@ -49,6 +49,18 @@
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**Agent HUD Open**](https://github.com/jazzenchen/agent-hud-open) | `🖥️ macOS App` | Swift macOS Notch-HUD für Coding-Agenten: Zeigt Token-Verbrauch, API-Kosten und Session-Status direkt in der MacBook-Notch an. |
 | [**Agentic Inbox**](https://github.com/cloudflare/agentic-inbox) | `☁️ Cloud / SaaS` | Serverless AI Email Client auf Cloudflare: Vollständiger Mail-Client, der autonom E-Mails liest, kategorisiert und beantwortet. Läuft serverless auf Cloudflare Workers/Agents. |
 | [**AGENTS.md Specification**](https://github.com/agentsmd/agents.md) | `📐 Pattern` | Offener Standard für Coding-Agent-Instruktionen: Standardisiertes Format für Copilot, Gemini CLI, Cursor, Claude Code. Dient als Referenz-Linter für `npm run validate` im AOS-Ökosystem. |
@@ -137,6 +149,18 @@
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**A2A Protocol**](https://github.com/a2aproject/A2A) | `📐 Pattern` | Agent-to-Agent Interoperability Protocol: Offener Standard zur Kommunikation zwischen unterschiedlichen, isolierten Multi-Agenten-Systemen (Discovery, Modalitäten-Aushandlung, Task-Kollaboration). Ergänzt MCP auf Agent-Ebene. |
 | [**Agno (AgentOS)**](https://github.com/agno-agi/agno) | `⚙️ Framework` | Multi-Modal Agent Platform & Runtime (ehem. Phidata): Eigenständiger Agenten-Stack mit Memory, Session-Store, RBAC und integriertem Web-Dashboard. |
 | [**AI Employees**](https://github.com/markfulton/ai-employees) | `⚙️ Framework` | 8 Open Source AI Employees & 60 Scheduled Routines: Deckt die Domänen GTM, SEO, WebDev, Social, Ads, Sales, Support und Chief of Staff ab. Füllt die bisher schwächste Domäne in AOS (`saas-ops` / Business-Workflows) mit schlüsselfertigen Routinen, abgesichert über das AOS GO-Gate. |
@@ -159,6 +183,18 @@
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**AWS Strands-Box**](https://github.com/strands-agents/box) | `🖥️ Computer-Use` | OS-Level Sandboxing für autonome Agenten: Dogwood Policy Language (zeitliche & bedingte Regeln), External Secret Injection. Behebt das in AOS anerkannte Residual-Sicherheitsdefizit (H2: "Gate is not a sandbox") für ungetestete Agentenbefehle. |
 | [**Bops**](https://github.com/OrgoAI/bops) | `🖥️ Computer-Use` | Autonome Business-Ops Bot-Flotte: Mac-App, bei der jeder Bot einen eigenen Orgo-Cloud-Computer mit 4 Bildschirmen hat. Zugriff auf 1000+ Tools via Composio, Langzeitgedächtnis via Honcho und Computer Use via Codex. FSL-1.1. |
 | [**Celesto**](https://github.com/CelestoAI/celesto) | `🖥️ Computer-Use` | Secure & Persistent Computer for AI Agents: Bietet isolierte, persistente Cloud/Desktop-Umgebungen (inkl. Windows Guide) für Agenten-Execution. Essentiell für sichere Code-Ausführung außerhalb der Host-Maschine. |
@@ -183,6 +219,18 @@
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**book-to-skill**](https://github.com/epishkin/book-to-skill) | `🧩 Skill` | Dokumenten- und Buch-zu-Skill-Generator: Transformiert Fachbücher, PDFs und Source-Ordner in abrufbare Agent-Skills für Claude Code und Codex. |
 | [**cao (Answer me with HTML)**](https://github.com/epishkin/cao) | `🧩 Skill` | Token-sparender Visual Explainer Skill: Erzeugt interaktive HTML-Erklärungsseiten nach ASD-STE100 bei 1/7 des typischen Token-Aufwands. |
 | [**Codebase Memory MCP**](https://github.com/DeusData/codebase-memory-mcp) | `☁️ Cloud / SaaS` | AST Knowledge-Graph MCP Server: Parst Repositories via Tree-Sitter & LSP in eine lokale SQLite-Wissensdatenbank. Reduziert Kontext-Tokens bei Code-Recherche um bis zu 99% (z.B. von 412k auf 3.4k Tokens). Direkte Synergie mit Synapse & memB. |
@@ -208,6 +256,18 @@
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**bug-bounty-hunting-prompts**](https://github.com/mdpsec/bug-bounty-hunting-prompts) | `🛡️ Security` | Strukturierte Bug-Bounty-Prompts: Verwandelt chaotisches Ausprobieren in einen evidenzbasierten Sicherheits-Workflow für LLMs und Security-Agenten. |
 | [**Claude-BugHunter**](https://github.com/elementalsouls/Claude-BugHunter) | `🧩 Skill` | Multi-Harness Red-Team & Security Pipeline: Agent-Skill-Paket für Claude Code, OpenCode, Codex CLI und Antigravity mit Burp MCP Ports, 6-Phasen-Workflow und 7-Fragen-Validierungs-Gate gegen False Positives. |
 | [**e2e (tester-army)**](https://github.com/tester-army/e2e) | `🛡️ Security` | Replay-fähiges Agent-Testing Framework: Kombiniert natürlichsprachliche Agenten-Schritte (`agent.act`) mit Playwright-Locators für Web, iOS und Android (Apache 2.0). Einmal erfolgreiche Schritte werden gecacht und bei Folge-Läufen ohne erneute Modell-Calls kostenlos wiederholt. |
@@ -223,10 +283,22 @@
 
 ## 6. Frontend, UI-Komponenten & Design Systems (Godmode UI/UX)
 
-*Anzahl kuratierter Tools: 54*
+*Anzahl kuratierter Tools: 66*
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**21st.dev**](https://21st.dev) | `🎨 Design Lib` | Großer Marktplatz für moderne React-Komponenten für individuelles Design abseits des Standard-KI-Looks. |
 | [**AG-UI Protocol**](https://ag-ui.org) | `🎨 Design Lib` | Offener UI-Standard für Agent-Oberflächen: Einheitliche Protokoll-Events (`RUN_STARTED`, `TOOL_CALL_START`, `TEXT_MESSAGE_CONTENT`, `RUN_FINISHED`) für beliebige Agenten und Frontends. |
 | [**Agents Observe**](https://github.com/simple10/agents-observe) | `🎨 Media Tech` | Echtzeit-Observability-Dashboard für Claude Code & Codex: Lokales Web-Dashboard (`localhost:5173`) mit Multi-Agenten-Filterung, Session-Replay, Suchfunktion und genauer Token-Kostenanalyse. |
@@ -286,10 +358,23 @@
 
 ## 7. Video Generation, Creative Media Tech & Remotion (Godmode Media)
 
-*Anzahl kuratierter Tools: 46*
+*Anzahl kuratierter Tools: 47*
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ffmpeg.wasm**](https://github.com/ffmpegwasm/ffmpeg.wasm) | `🎨 Media Tech` | Vollständiges FFmpeg als WebAssembly für den Browser: Video-Transkodierung, Frame-Extraktion und Audio-Schnitt direkt in der Client-Sandbox ohne Backend-Server. |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | **250+ Agent Company Architecture** | `📐 Architecture` | 📐 Multi-Agenten Enterprise Architektur: Blaupause für autonome Abteilungen mit 250+ Agenten. |
 | [**Aceternity UI**](https://ui.aceternity.com) | `🎨 Design Lib` | Hochwertige Micro-Interactions, 3D-Karten, animierte Hintergründe und Framer Motion Effekte (v2.0). |
 | [**AGRec**](https://github.com/huipengli0708-dot/AGRec) | `🖥️ Screen Recorder` | Screen-Recording- und Walkthrough-Capture für macOS: Aufzeichnung von Agenten-Demos und visuellen Testabläufen. |
@@ -345,6 +430,18 @@
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | **Auto-aiming Trash Can (htx_studio)** | `🤖 Hardware` | 🤖 Hardware & Robotics Experiment: Autonom ausgerichteter Papierkorb mit Computer Vision. |
 | **Manti Robotics PCB** | `🔌 Hardware` | `MANTI Engineering Workbench` &#124; Hardware & Robotics Engineering Workbench: KI-gesteuertes PCB-Design (ESP32-P4/C6, JLC Fertigung, Routing). Perfekte Ergänzung für den `pcb-design-assistant`. &#124; `IMG_7254.PNG`, `IMG_7255.PNG` |
 | [**Text-to-CAD**](https://github.com/earthtojake/text-to-cad) | `🔌 Hardware` | 3D-CAD Superpowers für Coding-Agenten: Generiert lokale STEP-, GLB-, STL- und 3MF-Modelle via Build123d und OpenCASCADE, führt DFM-Prüfungen durch und erstellt technische Zeichnungen für Fertigungsdienstleister (17k Stars). |
@@ -353,10 +450,23 @@
 
 ## 9. Cloud Infrastructure, Flotten-Management & SaasEngine
 
-*Anzahl kuratierter Tools: 16*
+*Anzahl kuratierter Tools: 17*
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**PGSync**](https://github.com/pgrundev/pgsync) | `☁️ Cloud / SaaS` | Rust-basierte Echtzeit-Replikation für PostgreSQL 16/17/18: Direkter WAL-Stream ohne Extensions oder Trigger, automatische Crash-Recovery und Sync bei nur ~15 MB RAM. |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**Bento**](https://github.com/nyblnet/bento) | `☁️ Cloud / SaaS` | Single-File Local-First Office Suite: Das gesamte Dokumenten- und Präsentations-Tool passt in eine einzige HTML-Datei. Keine Cloud-Abhängigkeiten, KI-lesbares JSON-Format, Claude-Plugin. |
 | [**Breakscale**](https://github.com/xevrion/breakscale) | `☁️ Cloud / SaaS` | Diskreter System-Design Simulator: Interaktiver Canvas zur Simulation von verteilten Systemen unter Last – visualisiert Queueing-Verhalten, Latenz-Percentile, Circuit-Breaker und Retry-Storms mit echten diskreten Ereignissen. |
 | [**Claude Skills Founder (Pricing Strategy)**](https://github.com/emotixco/claude-skills-founder) | `🧩 Skill` | SaaS-Pricing & Founder Toolkit für Claude Code: Befehle wie `/founder:pricing-strategy` zur systematischen Evaluierung von Preismodellen, Tier-Strukturen und Unit Economics direkt im Terminal. |
@@ -382,6 +492,18 @@
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**Google Maps Scraper Kit**](https://github.com/Mahanaicoach/google-maps-scraper-kit) | `🕷️ Scraper / Data` | Lokaler Google Maps Scraper mit Docker & Claude Skill: Kostenloser lokaler Lead-Scraper ohne externe API-Kosten. |
 
 ---
@@ -392,6 +514,18 @@
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**ASCII Magic**](https://www.ascii-magic.com/ascii) | `🎨 Design Lib` | Interaktiver Generator für saubere, hochauflösende ASCII-Art aus Bildern und Texten für Retro- & Terminal-UIs. |
+| [**canvas-confetti**](https://github.com/catdad/canvas-confetti) | `🎨 Design Lib` | 60-FPS Partikel-Physik für Konfetti-Effekte ohne externe Abhängigkeiten für Celebrations und Onboardings. |
+| [**cobe**](https://github.com/shuding/cobe) | `🎨 WebGL Lib` | Leichtgewichtiger interaktiver 3D-WebGL-Globus (unter 5 KB) von Shu Ding für Landing-Page Hero-Sections. |
+| [**deck.gl**](https://github.com/visgl/deck.gl) | `🎨 WebGL Lib` | Hochperformante WebGL2-Datenvisualisierungssuite von vis.gl zum Rendern von Millionen animierter 3D-Datenpunkte auf der GPU. |
+| [**drei**](https://github.com/pmndrs/drei) | `🎨 3D Lib` | Umfassende Helper- und Kamera-Sammlung für React Three Fiber (R3F): Liefert fertige Lighting-Rigs, HDR-Environment-Maps und Controls. |
+| [**Ely GPUI Components**](https://github.com/ELY-Open-Source/Ely-GPUI-Components) | `🎨 Design Lib` | Native UI-Komponentenbibliothek für Zeds GPUI-Framework in Rust: Schnelle, GPU-beschleunigte Desktop-Interfaces für native Tools. |
+| [**fabric.js**](https://github.com/fabricjs/fabric.js) | `🎨 Canvas Lib` | Interaktives HTML5-Canvas-Objektmodell: Ermöglicht Agenten das dynamische Erzeugen, Serialisieren und Animieren komplexer 2D-Vektorgrafiken. |
+| [**gpui-motion**](https://github.com/1bye/gpui-motion) | `🎨 Motion Lib` | Spring-Physik- und Animationsbibliothek für das GPUI-Framework in Rust: Flüssige Transitions und Gesten für native Desktop-Apps. |
+| [**motion**](https://github.com/motiondivision/motion) | `🎨 Motion Lib` | Moderne Animations-Runtime für Web & React (ehem. Framer Motion): Spring-Physik, Gesten-Tracking und Layout-Animationen ohne Layout-Thrashing. |
+| [**rive-runtime**](https://github.com/rive-app/rive-runtime) | `🎨 Motion Lib` | Next-Gen Vektor-Runtime von Rive: Führt winzige State-Machine-Vektordateien mit 120 FPS in interaktiven Web- & App-Interfaces aus. |
+| [**three.js**](https://github.com/mrdoob/three.js) | `🎨 3D Engine` | Der De-facto-Standard für WebGL- und WebGPU-Grafik im Web: Ermöglicht Coding-Agenten das direkte Schreiben von Shadern, Kamera-Orbits und 3D-Szenen. |
+| [**twgl.js**](https://github.com/greggman/twgl.js) | `🎨 WebGL Lib` | Minimalistische WebGL-Hilfsbibliothek: Eliminiert Boilerplate bei der Kompilierung benutzerdefinierter Shader und Vertex-Buffer. |
 | [**angr**](https://github.com/angr/angr) | `🔍 Reverse Eng.` | Symbolische Ausführungs-Engine & Binary Analysis Framework (Python): Automatische Pfadfindung, Exploit-Generierung und State-Exploration für komplexe Binärdateien. |
 | [**Apktool**](https://github.com/iBotPeaches/Apktool) | `🔍 Reverse Eng.` | Reverse Engineering für Android APKs: Dekodiert Ressourcen in nahezu originale Form, erlaubt Modifikationen und baut APKs wieder lauffähig zusammen. |
 | [**awesome-ai-reverse-engineering**](https://github.com/zhuyansen/awesome-ai-reverse-engineering) | `🔍 Reverse Eng.` | 122 bewertete AI-Reverse-Engineering-Projekte: Vollständige Benchmark- und Werkzeugsammlung für LLM-gestützte Dekompilierung und Code-Synthese. |
