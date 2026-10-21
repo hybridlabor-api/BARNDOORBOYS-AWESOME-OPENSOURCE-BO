@@ -4,7 +4,7 @@
 > *Fokus: Agent Operating System (AOS), Multi-Agent Swarms, Computer-Use, Creative Media & SaasEngine.*
 
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Tools](https://img.shields.io/badge/Tools-256%20Kuriert-blue.svg)](#-inhaltsverzeichnis-nach-domänen)
+[![Tools](https://img.shields.io/badge/Tools-273%20Kuriert-blue.svg)](#-inhaltsverzeichnis-nach-domänen)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![AOS](https://img.shields.io/badge/Ecosystem-BDB%20AOS%20v5-purple.svg)](https://github.com/barndoorboys)
 
@@ -388,12 +388,29 @@
 
 ## 11. Reverse Engineering & Binary Analysis
 
-*Anzahl kuratierter Tools: 3*
+*Anzahl kuratierter Tools: 20*
 
 | Tool / Projekt | Typ | Beschreibung & Relevanz für BDB |
 | :--- | :--- | :--- |
+| [**angr**](https://github.com/angr/angr) | `🔍 Reverse Eng.` | Symbolische Ausführungs-Engine & Binary Analysis Framework (Python): Automatische Pfadfindung, Exploit-Generierung und State-Exploration für komplexe Binärdateien. |
+| [**Apktool**](https://github.com/iBotPeaches/Apktool) | `🔍 Reverse Eng.` | Reverse Engineering für Android APKs: Dekodiert Ressourcen in nahezu originale Form, erlaubt Modifikationen und baut APKs wieder lauffähig zusammen. |
+| [**awesome-ai-reverse-engineering**](https://github.com/zhuyansen/awesome-ai-reverse-engineering) | `🔍 Reverse Eng.` | 122 bewertete AI-Reverse-Engineering-Projekte: Vollständige Benchmark- und Werkzeugsammlung für LLM-gestützte Dekompilierung und Code-Synthese. |
+| [**awesome-reverse-engineering**](https://github.com/morluto/awesome-reverse-engineering) | `🔍 Reverse Eng.` | Offizielle kuratierte RE-Sammlung vom REA-Schöpfer: Die besten Disassembler, Decompiler, Cheat-Engines und Protokoll-Analyzer auf einen Blick. |
+| **Clean-Room Rebuild Loop** | `📐 Pattern` | Deterministischer Rebuild-Loop: Binary/API -> Extraktion via Ghidra/REA/mitmproxy -> Spezifikation (`SPEC.md`) -> Oracles & Checks -> Clean-Room Nachbau ohne fremden Quellcode bis zur 100% Verifikation. |
 | [**Cutter**](https://github.com/rizinorg/cutter) | `🔍 Reverse Eng.` | Free & Open-Source Reverse Engineering Platform: Powered by Rizin / Radare2 mit Ghidra Decompiler. Erweitert das Security-Review-Portfolio (`security-reviewer`) um tiefe Binäranalyse und Disassembly. |
+| [**dnSpy**](https://github.com/dnSpyEx/dnSpy) | `🔍 Reverse Eng.` | .NET Assembly Decompiler & Debugger: Erlaubt das direkte Debuggen, Editieren und Modifizieren von .NET- und C#-Binaries ohne Quellcode. |
+| [**Frida**](https://github.com/frida/frida) | `🔍 Reverse Eng.` | Dynamic Instrumentation Toolkit: Klinkt JavaScript-Hooks in laufende native Prozesse (iOS, Android, Windows, macOS, Linux); unentbehrlich für API-Tracing und In-Memory-Analysen. |
 | [**Ghidra (NSA)**](https://github.com/NationalSecurityAgency/ghidra) | `🔍 Reverse Eng.` | Premier Software Reverse Engineering Suite (55k+ Stars): Disassembler, Decompiler und interaktiver Code-Graph für Windows, macOS und Linux. |
+| [**GhidraMCP**](https://github.com/LaurieWired/GhidraMCP) | `🧩 Skill` | Ghidra MCP Server für KI-Agenten: Erlaubt Claude Code, Codex und Antigravity das autonome Steuern von Ghidra (Funktionen dekompilieren, Renaming, Struct-Parsing). |
+| [**ida-pro-mcp**](https://github.com/mrexodia/ida-pro-mcp) | `🧩 Skill` | Hex-Rays IDA Pro MCP Bridge: Bindet Coding-Agenten direkt an IDA Pro an; automatisierte Dekompilierung und Typ-Extraktion. |
+| [**ILSpy**](https://github.com/icsharpcode/ILSpy) | `🔍 Reverse Eng.` | Open-Source .NET Decompiler: Schneller Decompiler und Assembly-Browser für moderne C#- und .NET-Runtimes. |
+| [**ImHex**](https://github.com/WerWolv/ImHex) | `🔍 Reverse Eng.` | Moderner Hex-Editor für Reverse Engineers: Ausgestattet mit eigener C++-ähnlicher Pattern-Language zum visuellen Dekodieren komplexer Dateiformate. |
+| [**jadx**](https://github.com/skylot/jadx) | `🔍 Reverse Eng.` | Dex to Java Decompiler: Dekompiliert Android APK, DEX, AAR und ZIP direkt in lesbaren Java-Quellcode (CLI & GUI). |
+| [**mitmproxy**](https://github.com/mitmproxy/mitmproxy) | `🔍 Reverse Eng.` | Interaktiver HTTPS & WebSocket Proxy: Fängt Netzwerktraffic ab, modifiziert Payloads on-the-fly und ermöglicht Replay-Testing proprietärer APIs. |
+| [**radare2**](https://github.com/radareorg/radare2) | `🔍 Reverse Eng.` | Unix-Philosophie RE-Framework: Extrem performantes Terminal-Werkzeug für Disassembly, Binärpatching und Scripting. |
+| [**raddebugger**](https://github.com/EpicGames/raddebugger) | `🔍 Reverse Eng.` | Nativer Multi-Process Debugger von Epic Games: Ultraschnelle Symbol-Auflösung und flüssiges Step-Debugging für C/C++-Binaries. |
 | [**REA (Reverse Engineer Anything)**](https://github.com/morluto/rea) | `🔍 Reverse Eng.` | Reverse Engineering MCP für Agenten: Ermöglicht Coding-Agenten das automatisierte Analysieren und Decompilieren von Binärdateien, Web-APIs und App-Interna. #3 Trending Repo of the Day. |
+| [**rizin**](https://github.com/rizinorg/rizin) | `🔍 Reverse Eng.` | Modularer, auf Stabilität und saubere APIs fokussierter Radare2-Fork: Kern-Engine für Disassembly, Debugging und Decompilierung. |
+| [**x64dbg**](https://github.com/x64dbg/x64dbg) | `🔍 Reverse Eng.` | Open-Source x64/x32 Debugger für Windows: Modulares GUI-Debugging mit Plugin-Architektur und Memory-Inspection. |
 
 ---
